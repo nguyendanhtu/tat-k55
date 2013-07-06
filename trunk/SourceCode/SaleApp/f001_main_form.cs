@@ -77,7 +77,7 @@ namespace SaleApp
         private void format_controls()
         {
             CControlFormat.setFormStyle(this);
-
+            this.ShowInTaskbar = true;
             set_define_events();
         }
 
