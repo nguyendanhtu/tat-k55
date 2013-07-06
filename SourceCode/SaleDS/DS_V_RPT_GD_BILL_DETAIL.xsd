@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_V_RPT_GD_BILL_DETAIL" targetNamespace="http://tempuri.org/DS_V_RPT_GD_BILL_DETAIL.xsd" xmlns:mstns="http://tempuri.org/DS_V_RPT_GD_BILL_DETAIL.xsd" xmlns="http://tempuri.org/DS_V_RPT_GD_BILL_DETAIL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyBanHangConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBanHangConnectionString3 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SaleDS.Properties.Settings.GlobalReference.Default.QuanLyBanHangConnectionString3" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyBanHangConnectionString4" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBanHangConnectionString4 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SaleDS.Properties.Settings.GlobalReference.Default.QuanLyBanHangConnectionString4" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_RPT_GD_BILL_DETAILTableAdapter" GeneratorDataComponentClassName="V_RPT_GD_BILL_DETAILTableAdapter" Name="V_RPT_GD_BILL_DETAIL" UserDataComponentName="V_RPT_GD_BILL_DETAILTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyBanHangConnectionString4 (Settings)" DbObjectName="QuanLyBanHang.dbo.V_RPT_GD_BILL_DETAIL" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, BILL_ID, PRODUCT_ID, QUANTITY, BILL_SERI, CUSTOMER_ID, BILL_DATE, CUSTOMER_NAME, PRODUCT_NAME, PRODUCT_CODE, CATEGORY_NAME, CURRENT_PRICE, AMOUNT, CATEGORY_ID FROM dbo.V_RPT_GD_BILL_DETAIL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="BILL_ID" DataSetColumn="BILL_ID" />
+              <Mapping SourceColumn="PRODUCT_ID" DataSetColumn="PRODUCT_ID" />
+              <Mapping SourceColumn="QUANTITY" DataSetColumn="QUANTITY" />
+              <Mapping SourceColumn="BILL_SERI" DataSetColumn="BILL_SERI" />
+              <Mapping SourceColumn="CUSTOMER_ID" DataSetColumn="CUSTOMER_ID" />
+              <Mapping SourceColumn="BILL_DATE" DataSetColumn="BILL_DATE" />
+              <Mapping SourceColumn="CUSTOMER_NAME" DataSetColumn="CUSTOMER_NAME" />
+              <Mapping SourceColumn="PRODUCT_NAME" DataSetColumn="PRODUCT_NAME" />
+              <Mapping SourceColumn="PRODUCT_CODE" DataSetColumn="PRODUCT_CODE" />
+              <Mapping SourceColumn="CATEGORY_NAME" DataSetColumn="CATEGORY_NAME" />
+              <Mapping SourceColumn="CURRENT_PRICE" DataSetColumn="CURRENT_PRICE" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="CATEGORY_ID" DataSetColumn="CATEGORY_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_V_RPT_GD_BILL_DETAIL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_V_RPT_GD_BILL_DETAIL" msprop:Generator_DataSetName="DS_V_RPT_GD_BILL_DETAIL" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_RPT_GD_BILL_DETAIL" msprop:Generator_UserTableName="V_RPT_GD_BILL_DETAIL" msprop:Generator_RowDeletedName="V_RPT_GD_BILL_DETAILRowDeleted" msprop:Generator_TableClassName="V_RPT_GD_BILL_DETAILDataTable" msprop:Generator_RowChangedName="V_RPT_GD_BILL_DETAILRowChanged" msprop:Generator_RowClassName="V_RPT_GD_BILL_DETAILRow" msprop:Generator_RowChangingName="V_RPT_GD_BILL_DETAILRowChanging" msprop:Generator_RowEvArgName="V_RPT_GD_BILL_DETAILRowChangeEvent" msprop:Generator_RowEvHandlerName="V_RPT_GD_BILL_DETAILRowChangeEventHandler" msprop:Generator_TablePropName="V_RPT_GD_BILL_DETAIL" msprop:Generator_TableVarName="tableV_RPT_GD_BILL_DETAIL" msprop:Generator_RowDeletingName="V_RPT_GD_BILL_DETAILRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:decimal" />
+              <xs:element name="BILL_ID" msprop:Generator_UserColumnName="BILL_ID" msprop:Generator_ColumnPropNameInRow="BILL_ID" msprop:Generator_ColumnVarNameInTable="columnBILL_ID" msprop:Generator_ColumnPropNameInTable="BILL_IDColumn" type="xs:decimal" />
+              <xs:element name="PRODUCT_ID" msprop:Generator_UserColumnName="PRODUCT_ID" msprop:Generator_ColumnPropNameInRow="PRODUCT_ID" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_ID" msprop:Generator_ColumnPropNameInTable="PRODUCT_IDColumn" type="xs:decimal" />
+              <xs:element name="QUANTITY" msprop:Generator_UserColumnName="QUANTITY" msprop:Generator_ColumnPropNameInRow="QUANTITY" msprop:Generator_ColumnVarNameInTable="columnQUANTITY" msprop:Generator_ColumnPropNameInTable="QUANTITYColumn" type="xs:decimal" />
+              <xs:element name="BILL_SERI" msprop:Generator_UserColumnName="BILL_SERI" msprop:Generator_ColumnPropNameInRow="BILL_SERI" msprop:Generator_ColumnVarNameInTable="columnBILL_SERI" msprop:Generator_ColumnPropNameInTable="BILL_SERIColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTOMER_ID" msprop:Generator_UserColumnName="CUSTOMER_ID" msprop:Generator_ColumnPropNameInRow="CUSTOMER_ID" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER_ID" msprop:Generator_ColumnPropNameInTable="CUSTOMER_IDColumn" type="xs:decimal" />
+              <xs:element name="BILL_DATE" msprop:Generator_UserColumnName="BILL_DATE" msprop:Generator_ColumnPropNameInRow="BILL_DATE" msprop:Generator_ColumnVarNameInTable="columnBILL_DATE" msprop:Generator_ColumnPropNameInTable="BILL_DATEColumn" type="xs:dateTime" />
+              <xs:element name="CUSTOMER_NAME" msprop:Generator_UserColumnName="CUSTOMER_NAME" msprop:Generator_ColumnPropNameInRow="CUSTOMER_NAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER_NAME" msprop:Generator_ColumnPropNameInTable="CUSTOMER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCT_NAME" msprop:Generator_UserColumnName="PRODUCT_NAME" msprop:Generator_ColumnPropNameInRow="PRODUCT_NAME" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_NAME" msprop:Generator_ColumnPropNameInTable="PRODUCT_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCT_CODE" msprop:Generator_UserColumnName="PRODUCT_CODE" msprop:Generator_ColumnPropNameInRow="PRODUCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_CODE" msprop:Generator_ColumnPropNameInTable="PRODUCT_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATEGORY_NAME" msprop:Generator_UserColumnName="CATEGORY_NAME" msprop:Generator_ColumnPropNameInRow="CATEGORY_NAME" msprop:Generator_ColumnVarNameInTable="columnCATEGORY_NAME" msprop:Generator_ColumnPropNameInTable="CATEGORY_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CURRENT_PRICE" msprop:Generator_UserColumnName="CURRENT_PRICE" msprop:Generator_ColumnPropNameInRow="CURRENT_PRICE" msprop:Generator_ColumnVarNameInTable="columnCURRENT_PRICE" msprop:Generator_ColumnPropNameInTable="CURRENT_PRICEColumn" type="xs:decimal" />
+              <xs:element name="AMOUNT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CATEGORY_ID" msprop:Generator_UserColumnName="CATEGORY_ID" msprop:Generator_ColumnPropNameInRow="CATEGORY_ID" msprop:Generator_ColumnVarNameInTable="columnCATEGORY_ID" msprop:Generator_ColumnPropNameInTable="CATEGORY_IDColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_RPT_GD_BILL_DETAIL" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

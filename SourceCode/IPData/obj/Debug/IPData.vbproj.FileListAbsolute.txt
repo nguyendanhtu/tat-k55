@@ -1,0 +1,14 @@
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\bin\IPData.dll
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\bin\IPData.pdb
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\bin\IPData.xml
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\obj\Debug\IPData.dll
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\obj\Debug\IPData.xml
+D:\00. BKIndex\01. Project\Projects\02. Application\QuanLyKho\PROJECT_BAN HANG\SourceCode\IPData\obj\Debug\IPData.pdb
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\bin\IPData.dll
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\bin\IPData.pdb
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\bin\IPData.xml
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\obj\Debug\IPData.dll
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\obj\Debug\IPData.xml
+D:\00. BKIndex\01. Project\01. Projects\02. Application\QuanLyKho\QLKho\SourceCode\IPData\obj\Debug\IPData.pdb
