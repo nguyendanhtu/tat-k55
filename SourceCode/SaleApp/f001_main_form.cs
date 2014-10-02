@@ -7,11 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using System.Configuration;
-
-
 using System.Collections;
-
-
 using IP.Core.IPCommon;
 using IP.Core.IPSystemAdmin;
 
@@ -325,29 +321,23 @@ namespace SaleApp
             try
             {
                 show_manager_user();
-
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
-
         }
 
         private void mnu_directory_ItemClick(object sender, ItemClickEventArgs e)
         {
             try
             {
-
                 show_tu_dien_phan_quyen();
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
-            }
-           
+            }           
         }
 
 
@@ -355,12 +345,10 @@ namespace SaleApp
         {
             try
             {
-
-
+                
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -389,7 +377,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -422,12 +409,10 @@ namespace SaleApp
         {
             try
             {
-
                 show_introduction();
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -448,12 +433,10 @@ namespace SaleApp
 
             try
             {
-
                 show_provider();
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -462,12 +445,10 @@ namespace SaleApp
         {
              try
             {
-
                 show_product_price();
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
            
@@ -515,8 +496,7 @@ namespace SaleApp
                 show_form_nhap_so_du_dau();
             }
             catch (Exception v_e)
-            {
-                
+            {                
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -530,7 +510,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -543,7 +522,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -552,7 +530,6 @@ namespace SaleApp
         {
             try
             {
-
                 show_form_ban_hang();
             }
             catch (Exception v_e)
@@ -569,7 +546,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -582,7 +558,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -594,8 +569,7 @@ namespace SaleApp
                 show_employee();
             }
             catch (Exception v_e)
-            {
-                
+            {                
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -613,7 +587,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -625,8 +598,7 @@ namespace SaleApp
                 show_nhap_xuat();
             }
             catch (Exception v_e)
-            {
-                
+            {                
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -639,7 +611,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -652,7 +623,6 @@ namespace SaleApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }

@@ -61,7 +61,6 @@ namespace SaleApp
                             Debug.Assert(false);
                             break;
                     }
-
                 }
             }
             catch (Exception v_e)
