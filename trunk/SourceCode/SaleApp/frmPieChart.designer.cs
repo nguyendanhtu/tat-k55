@@ -585,7 +585,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmPieChart";
-            this.Text = "frmPieChart";
+            this.Text = "Pie Chart";
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();

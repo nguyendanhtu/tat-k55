@@ -267,7 +267,7 @@
             this.Controls.Add(this.m_txt_full_name);
             this.Controls.Add(this.m_txt_short_name);
             this.Name = "f402_dm_company_info_de";
-            this.Text = "f402 Thêm công ty";
+            this.Text = "F402 Thêm công ty";
             this.m_pnl_out_place_dm.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

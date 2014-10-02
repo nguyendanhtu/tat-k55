@@ -90,7 +90,6 @@ namespace SaleApp
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
-            this.popupControlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,8 +218,8 @@ namespace SaleApp
             this.m_fg.Size = new System.Drawing.Size(814, 381);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
-            this.m_fg.MouseLeave += new System.EventHandler(this.m_fg_MouseLeave);
             this.m_fg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.m_fg_MouseDown);
+            this.m_fg.MouseLeave += new System.EventHandler(this.m_fg_MouseLeave);
             // 
             // popupControlContainer1
             // 
@@ -249,12 +248,11 @@ namespace SaleApp
             this.Controls.Add(this.m_fg);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f301_dm_product";
-            this.Text = "f301_dm_product";
+            this.Text = "F301_dm_product";
             this.Load += new System.EventHandler(this.f301_dm_product_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
-            this.popupControlContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
