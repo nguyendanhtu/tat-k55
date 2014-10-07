@@ -20,7 +20,8 @@ using IP.Core.IPUserService;
 using SaleUS;
 using SaleDS;
 using Sale.CDBNames;
-
+using DevExpress.XtraEditors;
+using DevExpress.XtraTab;
 using C1.Win.C1FlexGrid;
 
 namespace SaleApp
@@ -52,6 +53,7 @@ namespace SaleApp
 			//
 			format_controls();
 		}
+
 
 		/// <summary>
 		/// Clean up any resources being used.

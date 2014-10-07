@@ -21,11 +21,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f001_main_form));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
-            this.imageCollection2 = new DevExpress.Utils.ImageCollection(this.components);
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+            this.imageCollection2 = new DevExpress.Utils.ImageCollection();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_user_management = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_directory = new DevExpress.XtraBars.BarButtonItem();
@@ -62,7 +61,7 @@
             this.mnu_cmd_employee = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_bao_cao_theo_nhom = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_phieu_nhap_xuat = new DevExpress.XtraBars.BarButtonItem();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
             this.hệThốngToolStripMenuItem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.quanTriHêThôngToolStripMenuItem = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -97,12 +96,23 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.s = new DevExpress.XtraEditors.PanelControl();
+            this.m_pnl_content = new DevExpress.XtraEditors.PanelControl();
+            this.m_xtab_control = new DevExpress.XtraTab.XtraTabControl();
+            this.ImageList = new System.Windows.Forms.ImageList();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s)).BeginInit();
+            this.s.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_pnl_content)).BeginInit();
+            this.m_pnl_content.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_xtab_control)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -110,12 +120,7 @@
             this.ribbon.ApplicationButtonDropDownControl = this.applicationMenu1;
             this.ribbon.ApplicationButtonText = null;
             this.ribbon.ApplicationIcon = global::SaleApp.Properties.Resources.BKIndex_icon;
-            // 
-            // 
-            // 
             this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.ExpandCollapseItem.Name = "";
-            this.ribbon.ExpandCollapseItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
             this.ribbon.Images = this.imageCollection2;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -164,17 +169,14 @@
             this.nhậpLiệuToolStripMenuItem,
             this.báoCáoToolStripMenuItem,
             this.ribbonPage5});
-            this.ribbon.SelectedPage = this.báoCáoToolStripMenuItem;
-            this.ribbon.Size = new System.Drawing.Size(1083, 148);
+            this.ribbon.Size = new System.Drawing.Size(1083, 151);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
             // applicationMenu1
             // 
-            this.applicationMenu1.BottomPaneControlContainer = null;
             this.applicationMenu1.Name = "applicationMenu1";
             this.applicationMenu1.Ribbon = this.ribbon;
-            this.applicationMenu1.RightPaneControlContainer = null;
             // 
             // imageCollection2
             // 
@@ -196,8 +198,8 @@
             this.mnu_user_management.LargeWidth = 60;
             this.mnu_user_management.Name = "mnu_user_management";
             this.mnu_user_management.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.mnu_user_management.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText)
-                        | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.mnu_user_management.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mnu_user_management.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnu_user_management_ItemClick);
             // 
             // mnu_directory
@@ -721,20 +723,89 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 679);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 673);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1083, 25);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1083, 31);
             // 
             // s
             // 
             this.s.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.s.ContentImage = global::SaleApp.Properties.Resources._37371_57;
+            this.s.Controls.Add(this.m_pnl_content);
             this.s.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.s.Location = new System.Drawing.Point(0, 148);
+            this.s.Location = new System.Drawing.Point(0, 151);
             this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(1083, 531);
+            this.s.Size = new System.Drawing.Size(1083, 522);
             this.s.TabIndex = 2;
+            // 
+            // m_pnl_content
+            // 
+            this.m_pnl_content.Controls.Add(this.m_xtab_control);
+            this.m_pnl_content.Controls.Add(this.panelControl1);
+            this.m_pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_pnl_content.Location = new System.Drawing.Point(0, 0);
+            this.m_pnl_content.Name = "m_pnl_content";
+            this.m_pnl_content.Size = new System.Drawing.Size(1083, 522);
+            this.m_pnl_content.TabIndex = 0;
+            // 
+            // m_xtab_control
+            // 
+            this.m_xtab_control.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_xtab_control.Location = new System.Drawing.Point(2, 2);
+            this.m_xtab_control.Name = "m_xtab_control";
+            this.m_xtab_control.Size = new System.Drawing.Size(1079, 480);
+            this.m_xtab_control.TabIndex = 0;
+            // 
+            // ImageList
+            // 
+            this.ImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ImageList.ImageStream")));
+            this.ImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.ImageList.Images.SetKeyName(0, "");
+            this.ImageList.Images.SetKeyName(1, "");
+            this.ImageList.Images.SetKeyName(2, "");
+            this.ImageList.Images.SetKeyName(3, "");
+            this.ImageList.Images.SetKeyName(4, "");
+            this.ImageList.Images.SetKeyName(5, "");
+            this.ImageList.Images.SetKeyName(6, "");
+            this.ImageList.Images.SetKeyName(7, "");
+            this.ImageList.Images.SetKeyName(8, "");
+            this.ImageList.Images.SetKeyName(9, "");
+            this.ImageList.Images.SetKeyName(10, "");
+            this.ImageList.Images.SetKeyName(11, "");
+            this.ImageList.Images.SetKeyName(12, "");
+            this.ImageList.Images.SetKeyName(13, "");
+            this.ImageList.Images.SetKeyName(14, "");
+            this.ImageList.Images.SetKeyName(15, "");
+            this.ImageList.Images.SetKeyName(16, "");
+            this.ImageList.Images.SetKeyName(17, "");
+            this.ImageList.Images.SetKeyName(18, "");
+            this.ImageList.Images.SetKeyName(19, "");
+            this.ImageList.Images.SetKeyName(20, "");
+            this.ImageList.Images.SetKeyName(21, "");
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.m_cmd_exit);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl1.Location = new System.Drawing.Point(2, 482);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1079, 38);
+            this.panelControl1.TabIndex = 1;
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 12;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(989, 2);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(88, 34);
+            this.m_cmd_exit.TabIndex = 12;
+            this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
             // f001_main_form
             // 
@@ -759,6 +830,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s)).EndInit();
+            this.s.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_pnl_content)).EndInit();
+            this.m_pnl_content.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_xtab_control)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -839,5 +916,10 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
         private DevExpress.XtraBars.BarButtonItem mnu_phieu_nhap_xuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
+        private DevExpress.XtraEditors.PanelControl m_pnl_content;
+        private DevExpress.XtraTab.XtraTabControl m_xtab_control;
+        internal System.Windows.Forms.ImageList ImageList;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        internal SIS.Controls.Button.SiSButton m_cmd_exit;
     }
 }
