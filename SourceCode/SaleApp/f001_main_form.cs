@@ -95,8 +95,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được quyền truy nhập phần này !!! ");
                 return;
             }
-            f961_bao_cao_xuat_nhap_trong_ky v_frm_961 = new f961_bao_cao_xuat_nhap_trong_ky();
-            v_frm_961.display();
+            f961_bao_cao_xuat_nhap_trong_ky v_frm = new f961_bao_cao_xuat_nhap_trong_ky();
+            v_frm.close_tab_B = new f961_bao_cao_xuat_nhap_trong_ky.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_bc_xuat_nhap_ton", "Báo cáo xuất-nhập-tồn", v_uc);
+
+            //f961_bao_cao_xuat_nhap_trong_ky v_frm_961 = new f961_bao_cao_xuat_nhap_trong_ky();
+            //v_frm_961.display();
         }
 
         private void show_manager_user()
@@ -116,8 +122,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được quyền truy nhập phần này !!! ");
                 return;
             }
-            f311_gd_product_price v_frm_311 = new f311_gd_product_price();
-            v_frm_311.display();
+            f311_gd_product_price v_frm = new f311_gd_product_price();
+            v_frm.close_tab_B = new f311_gd_product_price.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_product_price", "Cập nhật giá sản phẩm", v_uc);
+
+            //f311_gd_product_price v_frm_311 = new f311_gd_product_price();
+            //v_frm_311.display();
         }
         private void show_introduction()
         {
@@ -236,9 +248,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
+            f321_nhap_so_du_hang_hoa v_frm = new f321_nhap_so_du_hang_hoa();
+            v_frm.close_tab_B = new f321_nhap_so_du_hang_hoa.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_so_du_dau", "Nhập số dư đầu", v_uc);
 
-            f321_nhap_so_du_hang_hoa v_frm321 = new f321_nhap_so_du_hang_hoa();
-            v_frm321.display();
+            //f321_nhap_so_du_hang_hoa v_frm321 = new f321_nhap_so_du_hang_hoa();
+            //v_frm321.display();
         }
 
         private void show_customer()
@@ -298,9 +315,13 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
-
-            f921_bao_cao_theo_nhom v_frm921 = new f921_bao_cao_theo_nhom();
-            v_frm921.display();
+            f921_bao_cao_theo_nhom v_frm = new f921_bao_cao_theo_nhom();
+            v_frm.close_tab_B = new f921_bao_cao_theo_nhom.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_bc_nhom_hang", "Báo cáo theo nhóm hàng", v_uc);
+            //f921_bao_cao_theo_nhom v_frm921 = new f921_bao_cao_theo_nhom();
+            //v_frm921.display();
         }
         private void show_form_ban_hang()
         {
@@ -309,20 +330,36 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không đươc phép truy nhập phần này !!! ");
                 return;
             }
-
-            f331_xuat_ban_hang v_frm331 = new f331_xuat_ban_hang();
-            v_frm331.display();
+            f331_xuat_ban_hang v_frm = new f331_xuat_ban_hang();
+            v_frm.close_tab_B = new f331_xuat_ban_hang.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_xuat_hang", "Xuất hàng", v_uc);
+            //f331_xuat_ban_hang v_frm331 = new f331_xuat_ban_hang();
+            //v_frm331.display();
         }
 
         private void show_rpt_doanh_thu_ban_hang_theo_ky()
         {
-            f932_bao_cao_doanh_thu_theo_ky v_frm932 = new f932_bao_cao_doanh_thu_theo_ky();
-            v_frm932.display();
+            //f932_bao_cao_doanh_thu_theo_ky v_frm932 = new f932_bao_cao_doanh_thu_theo_ky();
+            //v_frm932.display();
+            f932_bao_cao_doanh_thu_theo_ky v_frm = new f932_bao_cao_doanh_thu_theo_ky();
+            v_frm.close_tab_B = new f932_bao_cao_doanh_thu_theo_ky.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_bc_doanh_thu", "Báo cáo doanh thu theo kỳ", v_uc);
+
         }
         private void show_rpt_doanh_thu_ban_hang_theo_mat_hang()
         {
-            f931_bao_cao_theo_hang v_frm931 = new f931_bao_cao_theo_hang();
-            v_frm931.display();
+            //f931_bao_cao_theo_hang v_frm931 = new f931_bao_cao_theo_hang();
+            //v_frm931.display();
+            f931_bao_cao_theo_hang v_frm = new f931_bao_cao_theo_hang();
+            v_frm.close_tab_B = new f931_bao_cao_theo_hang.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_bc_theo_mat_hang", "Báo cáo theo mặt hàng", v_uc);
+
         }
 
         private void show_employee()
@@ -339,8 +376,14 @@ namespace SaleApp
 
         private void show_nhap_xuat()
         {
-            f351_nhap_hang_nha_san_xuat v_frm351 = new f351_nhap_hang_nha_san_xuat();
-            v_frm351.display();
+            f351_nhap_hang_nha_san_xuat v_frm = new f351_nhap_hang_nha_san_xuat();
+            v_frm.close_tab_B = new f351_nhap_hang_nha_san_xuat.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_nhap_xuat", "Nhập hàng từ NCC", v_uc);
+
+            //f351_nhap_hang_nha_san_xuat v_frm351 = new f351_nhap_hang_nha_san_xuat();
+            //v_frm351.display();
         }
         private void show_phieu_nhap_xuat_trong_ky()
         {
@@ -349,9 +392,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
+            f971_danh_sach_phieu_nhap_xuat_trong_ky v_frm = new f971_danh_sach_phieu_nhap_xuat_trong_ky();
+            v_frm.close_tab_B = new f971_danh_sach_phieu_nhap_xuat_trong_ky.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_ds_phieu_nhap_xuat", "Danh sách phiếu nhập xuất trong kỳ", v_uc);
 
-            f971_danh_sach_phieu_nhap_xuat_trong_ky v_frm971 = new f971_danh_sach_phieu_nhap_xuat_trong_ky();
-            v_frm971.display();
+            //f971_danh_sach_phieu_nhap_xuat_trong_ky v_frm971 = new f971_danh_sach_phieu_nhap_xuat_trong_ky();
+            //v_frm971.display();
         }        
         #endregion
         //
