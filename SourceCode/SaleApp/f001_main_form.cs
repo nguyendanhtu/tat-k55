@@ -15,6 +15,7 @@ using System.Collections;
 using IP.Core.IPCommon;
 using IP.Core.IPSystemAdmin;
 using GuiDev;
+using SaleApp.UC;
 
 namespace SaleApp
 {
@@ -71,9 +72,15 @@ namespace SaleApp
         #region Members
 
         IPConstants.HowUserWantTo_Exit_MainForm m_exitMode = IPConstants.HowUserWantTo_Exit_MainForm.ExitFromSystem;
+        TabAdd m_obj_tab = new TabAdd();
         #endregion
 
         #region Private Methods
+        private void close_tab_A(bool ip_y_n) {
+            if(ip_y_n == true)
+                m_xtab_control.TabPages.RemoveAt(m_xtab_control.SelectedTabPageIndex);
+        }
+        
         private void format_controls()
         {
             CControlFormat.setFormStyle(this);
@@ -147,8 +154,13 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
-            f201_dm_category v_frm201 = new f201_dm_category();
-            v_frm201.display();
+            f201_dm_category v_frm = new f201_dm_category();
+            v_frm.close_tab_B = new f201_dm_category.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_dm_category", "Nhóm sản phẩm", v_uc);
+            //f201_dm_category v_frm201 = new f201_dm_category();
+            //v_frm201.display();
         }
 
         private void show_product()
@@ -158,9 +170,13 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
-
-            f301_dm_product v_frm301 = new f301_dm_product();
-            v_frm301.display();
+            f301_dm_product v_frm = new f301_dm_product();
+            v_frm.close_tab_B = new f301_dm_product.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_dm_product", "Sản phẩm", v_uc);
+            //f301_dm_product v_frm301 = new f301_dm_product();
+            //v_frm301.display();
         }
 
         /// <summary>
@@ -314,10 +330,18 @@ namespace SaleApp
         //
         private void set_define_events()
         {
-
+            m_xtab_control.CloseButtonClick += m_xtab_control_CloseButtonClick;
         }
 
-        
+        void m_xtab_control_CloseButtonClick(object sender, EventArgs e) {
+            try {
+                m_xtab_control.TabPages.RemoveAt(m_xtab_control.SelectedTabPageIndex);
+            }
+            catch(Exception v_e) {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
 
         private void mnu_user_management_ItemClick(object sender, ItemClickEventArgs e)
         {

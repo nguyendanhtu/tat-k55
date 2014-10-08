@@ -97,12 +97,15 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.s = new DevExpress.XtraEditors.PanelControl();
+            this.m_xtab_control = new DevExpress.XtraTab.XtraTabControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s)).BeginInit();
+            this.s.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_xtab_control)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -110,12 +113,7 @@
             this.ribbon.ApplicationButtonDropDownControl = this.applicationMenu1;
             this.ribbon.ApplicationButtonText = null;
             this.ribbon.ApplicationIcon = global::SaleApp.Properties.Resources.BKIndex_icon;
-            // 
-            // 
-            // 
             this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.ExpandCollapseItem.Name = "";
-            this.ribbon.ExpandCollapseItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
             this.ribbon.Images = this.imageCollection2;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -164,17 +162,14 @@
             this.nhậpLiệuToolStripMenuItem,
             this.báoCáoToolStripMenuItem,
             this.ribbonPage5});
-            this.ribbon.SelectedPage = this.báoCáoToolStripMenuItem;
-            this.ribbon.Size = new System.Drawing.Size(1083, 148);
+            this.ribbon.Size = new System.Drawing.Size(1083, 151);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
             // applicationMenu1
             // 
-            this.applicationMenu1.BottomPaneControlContainer = null;
             this.applicationMenu1.Name = "applicationMenu1";
             this.applicationMenu1.Ribbon = this.ribbon;
-            this.applicationMenu1.RightPaneControlContainer = null;
             // 
             // imageCollection2
             // 
@@ -217,8 +212,8 @@
             this.mnu_user_management.LargeWidth = 60;
             this.mnu_user_management.Name = "mnu_user_management";
             this.mnu_user_management.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.mnu_user_management.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText)
-                        | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.mnu_user_management.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mnu_user_management.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnu_user_management_ItemClick);
             // 
             // mnu_directory
@@ -854,20 +849,28 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 679);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 673);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1083, 25);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1083, 31);
             // 
             // s
             // 
             this.s.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.s.ContentImage = global::SaleApp.Properties.Resources._37371_57;
+            this.s.Controls.Add(this.m_xtab_control);
             this.s.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.s.Location = new System.Drawing.Point(0, 148);
+            this.s.Location = new System.Drawing.Point(0, 151);
             this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(1083, 531);
+            this.s.Size = new System.Drawing.Size(1083, 522);
             this.s.TabIndex = 2;
+            // 
+            // m_xtab_control
+            // 
+            this.m_xtab_control.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_xtab_control.Location = new System.Drawing.Point(0, 0);
+            this.m_xtab_control.Name = "m_xtab_control";
+            this.m_xtab_control.Size = new System.Drawing.Size(1083, 522);
+            this.m_xtab_control.TabIndex = 1;
             // 
             // f001_main_form
             // 
@@ -892,6 +895,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s)).EndInit();
+            this.s.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_xtab_control)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -972,5 +977,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
         private DevExpress.XtraBars.BarButtonItem mnu_phieu_nhap_xuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
+        private DevExpress.XtraTab.XtraTabControl m_xtab_control;
     }
 }

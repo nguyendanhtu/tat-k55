@@ -35,9 +35,7 @@ namespace SaleApp
 		internal SIS.Controls.Button.SiSButton m_cmd_update;
 		internal SIS.Controls.Button.SiSButton m_cmd_insert;
 		internal SIS.Controls.Button.SiSButton m_cmd_exit;
-		internal SIS.Controls.Button.SiSButton m_cmd_view;
-        private DevExpress.XtraBars.PopupControlContainer popupControlContainer1;
-        private PictureBox pictureBox1;
+        internal SIS.Controls.Button.SiSButton m_cmd_view;
 		private System.ComponentModel.IContainer components;
 
 		public f301_dm_product()
@@ -85,13 +83,8 @@ namespace SaleApp
             this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
-            this.popupControlContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ImageList
@@ -219,33 +212,13 @@ namespace SaleApp
             this.m_fg.Size = new System.Drawing.Size(814, 381);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
-            this.m_fg.MouseLeave += new System.EventHandler(this.m_fg_MouseLeave);
             this.m_fg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.m_fg_MouseDown);
-            // 
-            // popupControlContainer1
-            // 
-            this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.popupControlContainer1.Controls.Add(this.pictureBox1);
-            this.popupControlContainer1.Location = new System.Drawing.Point(12, 12);
-            this.popupControlContainer1.Name = "popupControlContainer1";
-            this.popupControlContainer1.Size = new System.Drawing.Size(150, 150);
-            this.popupControlContainer1.TabIndex = 21;
-            this.popupControlContainer1.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.m_fg.MouseLeave += new System.EventHandler(this.m_fg_MouseLeave);
             // 
             // f301_dm_product
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(814, 417);
-            this.Controls.Add(this.popupControlContainer1);
             this.Controls.Add(this.m_fg);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f301_dm_product";
@@ -253,9 +226,6 @@ namespace SaleApp
             this.Load += new System.EventHandler(this.f301_dm_product_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
-            this.popupControlContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -265,6 +235,8 @@ namespace SaleApp
 		public void display(){			
 			this.ShowDialog();
 		}
+        public delegate void close_tab(bool ip_y_n);
+        public close_tab close_tab_B;
 		#endregion
 
 		#region Data Structure
@@ -404,7 +376,8 @@ namespace SaleApp
 
 		private void m_cmd_exit_Click(object sender, EventArgs e) {
 			try{
-				this.Close();
+                close_tab_B(true);
+
 			}
 			catch (Exception v_e){
 				CSystemLog_301.ExceptionHandle(v_e);
@@ -452,18 +425,18 @@ namespace SaleApp
 
             try
             {
-                grid2us_object(m_us, m_fg.Row);
-                string pat = CIPConvert.ToStr(m_us.strIMAGE_PATH);
-                if (pat != "")
-                {
-                    Image mimage = Image.FromFile(pat);
-                    pictureBox1.Image = mimage;
-                    popupControlContainer1.Visible = true;
-                    popupControlContainer1.Location = this.PointToClient(new Point(e.X + 150, e.Y + 150));
+                //grid2us_object(m_us, m_fg.Row);
+                //string pat = CIPConvert.ToStr(m_us.strIMAGE_PATH);
+                //if (pat != "")
+                //{
+                //    Image mimage = Image.FromFile(pat);
+                //    pictureBox1.Image = mimage;
+                //    popupControlContainer1.Visible = true;
+                //    popupControlContainer1.Location = this.PointToClient(new Point(e.X + 150, e.Y + 150));
                    
-                }
-                else
-                popupControlContainer1.Visible = false;
+                //}
+                //else
+                //popupControlContainer1.Visible = false;
             }
             catch (Exception v_e)
             {
@@ -475,7 +448,7 @@ namespace SaleApp
 
         private void m_fg_MouseLeave(object sender, EventArgs e)
         {
-            popupControlContainer1.Visible = false;
+            //popupControlContainer1.Visible = false;
         }
 
 	}
