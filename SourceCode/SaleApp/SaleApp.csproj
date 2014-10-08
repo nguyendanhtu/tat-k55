@@ -102,6 +102,10 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AddTab, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Nguyen Thanh Tuyen\Downloads\TestAddTAb\TestAddTAb\AddTab\bin\Debug\AddTab.dll</HintPath>
+    </Reference>
     <Reference Include="C1.Common">
       <Name>C1.Common</Name>
       <HintPath>..\DLL\C1.Common.dll</HintPath>
