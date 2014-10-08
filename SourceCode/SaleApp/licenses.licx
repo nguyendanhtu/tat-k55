@@ -1,0 +1,13 @@
+<<<<<<< .working
+DevExpress.Registration.LicenseHelper, DevExpress.Registration, Version=12.2.4.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd
+=======
+DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraVerticalGrid.PropertyGridControl, DevExpress.XtraVerticalGrid.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+C1.Win.C1Input.C1TextBox, C1.Win.C1Input, Version=1.0.20031.0, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a
+DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraVerticalGrid.VGridControl, DevExpress.XtraVerticalGrid.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+C1.Win.C1FlexGrid.C1FlexGrid, C1.Win.C1FlexGrid, Version=2.5.20044.189, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9
+DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v10.1, Version=10.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+>>>>>>> .merge-right.r13
