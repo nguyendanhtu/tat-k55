@@ -119,6 +119,7 @@
             this.m_cmd_save.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_save.TabIndex = 12;
             this.m_cmd_save.Text = "&Lưu";
+            
             // 
             // m_cmd_exit
             // 
@@ -156,7 +157,7 @@
             this.Controls.Add(this.m_lbl_customer_group_name);
             this.Controls.Add(this.m_lbl_add_customer_group);
             this.Name = "f602_dm_customer_group_de";
-            this.Text = "F602 Thêm nhóm khách hàng";
+            this.Text = "f602 Thêm nhóm khách hàng";
             this.Load += new System.EventHandler(this.f602_dm_customer_group_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             this.ResumeLayout(false);

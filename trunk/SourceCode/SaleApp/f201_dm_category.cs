@@ -75,8 +75,9 @@ namespace SaleApp
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f201_dm_category));
-            this.ImageList = new System.Windows.Forms.ImageList();
+            this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.m_cmd_insert = new SIS.Controls.Button.SiSButton();
             this.m_cmd_update = new SIS.Controls.Button.SiSButton();
@@ -234,8 +235,6 @@ namespace SaleApp
 		public void display(){			
 			this.ShowDialog();
 		}
-        public delegate void close_tab(bool ip_y_n);
-        public close_tab close_tab_B;
 		#endregion
 
 		#region Data Structure
@@ -371,8 +370,7 @@ namespace SaleApp
 
 		private void m_cmd_exit_Click(object sender, EventArgs e) {
 			try{
-				//this.Close();
-                close_tab_B(true);
+				this.Close();
 			}
 			catch (Exception v_e){
 				CSystemLog_301.ExceptionHandle(v_e);

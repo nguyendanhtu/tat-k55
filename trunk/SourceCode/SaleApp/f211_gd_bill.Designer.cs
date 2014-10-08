@@ -231,7 +231,7 @@
             this.Controls.Add(this.m_lbl_gd_bill);
             this.Controls.Add(this.m_fg_gd_bill_detail);
             this.Name = "f211_gd_bill";
-            this.Text = "F211 Giao dịch bán hàng";
+            this.Text = "f211 Giao dịch bán hàng";
             ((System.ComponentModel.ISupportInitialize)(this.m_fg_gd_bill_detail)).EndInit();
             this.m_pnl_out_place_dm.ResumeLayout(false);
             this.ResumeLayout(false);

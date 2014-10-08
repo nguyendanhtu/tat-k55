@@ -762,10 +762,6 @@
             this.barChart.Values.Mode = BarChart.CValueProperty.ValueMode.Digit;
             this.barChart.Values.Visible = true;
             // 
-            // fontDialog
-            // 
-            this.fontDialog.Color = System.Drawing.SystemColors.ControlText;
-            // 
             // frmBarChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,7 +771,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmBarChart";
-            this.Text = "Bar Chart";
+            this.Text = "frmBarChart";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox5.ResumeLayout(false);

@@ -21,10 +21,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f001_main_form));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
-            this.imageCollection2 = new DevExpress.Utils.ImageCollection();
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
+            this.imageCollection2 = new DevExpress.Utils.ImageCollection(this.components);
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_user_management = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_directory = new DevExpress.XtraBars.BarButtonItem();
@@ -61,7 +62,7 @@
             this.mnu_cmd_employee = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_bao_cao_theo_nhom = new DevExpress.XtraBars.BarButtonItem();
             this.mnu_phieu_nhap_xuat = new DevExpress.XtraBars.BarButtonItem();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.hệThốngToolStripMenuItem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.quanTriHêThôngToolStripMenuItem = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -96,23 +97,12 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.s = new DevExpress.XtraEditors.PanelControl();
-            this.m_pnl_content = new DevExpress.XtraEditors.PanelControl();
-            this.m_xtab_control = new DevExpress.XtraTab.XtraTabControl();
-            this.ImageList = new System.Windows.Forms.ImageList();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s)).BeginInit();
-            this.s.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_pnl_content)).BeginInit();
-            this.m_pnl_content.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_xtab_control)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -120,7 +110,12 @@
             this.ribbon.ApplicationButtonDropDownControl = this.applicationMenu1;
             this.ribbon.ApplicationButtonText = null;
             this.ribbon.ApplicationIcon = global::SaleApp.Properties.Resources.BKIndex_icon;
+            // 
+            // 
+            // 
             this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.ExpandCollapseItem.Name = "";
+            this.ribbon.ExpandCollapseItem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
             this.ribbon.Images = this.imageCollection2;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -169,19 +164,43 @@
             this.nhậpLiệuToolStripMenuItem,
             this.báoCáoToolStripMenuItem,
             this.ribbonPage5});
-            this.ribbon.Size = new System.Drawing.Size(1083, 151);
+            this.ribbon.SelectedPage = this.báoCáoToolStripMenuItem;
+            this.ribbon.Size = new System.Drawing.Size(1083, 148);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
             // applicationMenu1
             // 
+            this.applicationMenu1.BottomPaneControlContainer = null;
             this.applicationMenu1.Name = "applicationMenu1";
             this.applicationMenu1.Ribbon = this.ribbon;
+            this.applicationMenu1.RightPaneControlContainer = null;
             // 
             // imageCollection2
             // 
             this.imageCollection2.ImageSize = new System.Drawing.Size(20, 20);
             this.imageCollection2.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection2.ImageStream")));
+            this.imageCollection2.Images.SetKeyName(0, "administrator-icon.png");
+            this.imageCollection2.Images.SetKeyName(1, "Apps-kchart-icon.png");
+            this.imageCollection2.Images.SetKeyName(2, "Apps-preferences-contact-list-icon.png");
+            this.imageCollection2.Images.SetKeyName(3, "comment.png");
+            this.imageCollection2.Images.SetKeyName(4, "death_list.png");
+            this.imageCollection2.Images.SetKeyName(5, "dictionary.png");
+            this.imageCollection2.Images.SetKeyName(6, "Dictionary-icon.png");
+            this.imageCollection2.Images.SetKeyName(7, "dictionarys.png");
+            this.imageCollection2.Images.SetKeyName(8, "exit.png");
+            this.imageCollection2.Images.SetKeyName(9, "folder_system.png");
+            this.imageCollection2.Images.SetKeyName(10, "Folder-Group-Folder-icon.png");
+            this.imageCollection2.Images.SetKeyName(11, "info.png");
+            this.imageCollection2.Images.SetKeyName(12, "licence-icon.png");
+            this.imageCollection2.Images.SetKeyName(13, "line_chart.png");
+            this.imageCollection2.Images.SetKeyName(14, "loading.png");
+            this.imageCollection2.Images.SetKeyName(15, "money.png");
+            this.imageCollection2.Images.SetKeyName(16, "picture.png");
+            this.imageCollection2.Images.SetKeyName(17, "reports-icon.png");
+            this.imageCollection2.Images.SetKeyName(18, "search.png");
+            this.imageCollection2.Images.SetKeyName(19, "summer_user.png");
+            this.imageCollection2.Images.SetKeyName(20, "system_preferences.png");
             // 
             // barButtonItem2
             // 
@@ -198,8 +217,8 @@
             this.mnu_user_management.LargeWidth = 60;
             this.mnu_user_management.Name = "mnu_user_management";
             this.mnu_user_management.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.mnu_user_management.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.mnu_user_management.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText)
+                        | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.mnu_user_management.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnu_user_management_ItemClick);
             // 
             // mnu_directory
@@ -520,6 +539,90 @@
             // 
             this.imageCollection1.ImageSize = new System.Drawing.Size(64, 64);
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
+            this.imageCollection1.Images.SetKeyName(0, "service_manager.png");
+            this.imageCollection1.Images.SetKeyName(1, "service_manager.png");
+            this.imageCollection1.Images.SetKeyName(2, "1.png");
+            this.imageCollection1.Images.SetKeyName(3, "5.png");
+            this.imageCollection1.Images.SetKeyName(4, "7.png");
+            this.imageCollection1.Images.SetKeyName(5, "9.png");
+            this.imageCollection1.Images.SetKeyName(6, "10.png");
+            this.imageCollection1.Images.SetKeyName(7, "11.png");
+            this.imageCollection1.Images.SetKeyName(8, "accessories_calculator.png");
+            this.imageCollection1.Images.SetKeyName(9, "add_notes.png");
+            this.imageCollection1.Images.SetKeyName(10, "address_book.png");
+            this.imageCollection1.Images.SetKeyName(11, "administrator-icon.png");
+            this.imageCollection1.Images.SetKeyName(12, "advertising.png");
+            this.imageCollection1.Images.SetKeyName(13, "apple_time_machine_alt.png");
+            this.imageCollection1.Images.SetKeyName(14, "applications_graphics.png");
+            this.imageCollection1.Images.SetKeyName(15, "applications_system.png");
+            this.imageCollection1.Images.SetKeyName(16, "Apps-kchart-icon.png");
+            this.imageCollection1.Images.SetKeyName(17, "Apps-preferences-contact-list-icon.png");
+            this.imageCollection1.Images.SetKeyName(18, "bank.png");
+            this.imageCollection1.Images.SetKeyName(19, "cabinet.png");
+            this.imageCollection1.Images.SetKeyName(20, "cashbox.png");
+            this.imageCollection1.Images.SetKeyName(21, "ccsm.png");
+            this.imageCollection1.Images.SetKeyName(22, "checkout.png");
+            this.imageCollection1.Images.SetKeyName(23, "coding.png");
+            this.imageCollection1.Images.SetKeyName(24, "comment.png");
+            this.imageCollection1.Images.SetKeyName(25, "database.png");
+            this.imageCollection1.Images.SetKeyName(26, "database_add.png");
+            this.imageCollection1.Images.SetKeyName(27, "database_x.png");
+            this.imageCollection1.Images.SetKeyName(28, "death_list.png");
+            this.imageCollection1.Images.SetKeyName(29, "delete_notes.png");
+            this.imageCollection1.Images.SetKeyName(30, "dialog_error.png");
+            this.imageCollection1.Images.SetKeyName(31, "dictionary.png");
+            this.imageCollection1.Images.SetKeyName(32, "Dictionary-icon.png");
+            this.imageCollection1.Images.SetKeyName(33, "dictionarys.png");
+            this.imageCollection1.Images.SetKeyName(34, "discount.png");
+            this.imageCollection1.Images.SetKeyName(35, "document_save.png");
+            this.imageCollection1.Images.SetKeyName(36, "dropbox.png");
+            this.imageCollection1.Images.SetKeyName(37, "empty_shopping_cart.png");
+            this.imageCollection1.Images.SetKeyName(38, "exit.png");
+            this.imageCollection1.Images.SetKeyName(39, "file_roller.png");
+            this.imageCollection1.Images.SetKeyName(40, "folder_system.png");
+            this.imageCollection1.Images.SetKeyName(41, "Folder-Group-Folder-icon.png");
+            this.imageCollection1.Images.SetKeyName(42, "gnome_sticky_notes_applet.png");
+            this.imageCollection1.Images.SetKeyName(43, "gnome_sudoku.png");
+            this.imageCollection1.Images.SetKeyName(44, "history.png");
+            this.imageCollection1.Images.SetKeyName(45, "icontexto_webdev_commerce.png");
+            this.imageCollection1.Images.SetKeyName(46, "illustrations.png");
+            this.imageCollection1.Images.SetKeyName(47, "industry.png");
+            this.imageCollection1.Images.SetKeyName(48, "info.png");
+            this.imageCollection1.Images.SetKeyName(49, "jabber_group.png");
+            this.imageCollection1.Images.SetKeyName(50, "licence-icon.png");
+            this.imageCollection1.Images.SetKeyName(51, "line_chart.png");
+            this.imageCollection1.Images.SetKeyName(52, "loading.png");
+            this.imageCollection1.Images.SetKeyName(53, "mi_scare_report.png");
+            this.imageCollection1.Images.SetKeyName(54, "money.png");
+            this.imageCollection1.Images.SetKeyName(55, "new.png");
+            this.imageCollection1.Images.SetKeyName(56, "notes.png");
+            this.imageCollection1.Images.SetKeyName(57, "paper_arrow.png");
+            this.imageCollection1.Images.SetKeyName(58, "people.png");
+            this.imageCollection1.Images.SetKeyName(59, "picture.png");
+            this.imageCollection1.Images.SetKeyName(60, "piggy_bank.png");
+            this.imageCollection1.Images.SetKeyName(61, "preferences_system_windows.png");
+            this.imageCollection1.Images.SetKeyName(62, "reports.png");
+            this.imageCollection1.Images.SetKeyName(63, "reports-icon.png");
+            this.imageCollection1.Images.SetKeyName(64, "search.png");
+            this.imageCollection1.Images.SetKeyName(65, "secure_payment.png");
+            this.imageCollection1.Images.SetKeyName(66, "send_user.png");
+            this.imageCollection1.Images.SetKeyName(67, "service_manager.png");
+            this.imageCollection1.Images.SetKeyName(68, "shopping_bag.png");
+            this.imageCollection1.Images.SetKeyName(69, "shopping_cart.png");
+            this.imageCollection1.Images.SetKeyName(70, "software_properties.png");
+            this.imageCollection1.Images.SetKeyName(71, "summer_user.png");
+            this.imageCollection1.Images.SetKeyName(72, "system_preferences.png");
+            this.imageCollection1.Images.SetKeyName(73, "system_search.png");
+            this.imageCollection1.Images.SetKeyName(74, "tech_support.png");
+            this.imageCollection1.Images.SetKeyName(75, "text_plain.png");
+            this.imageCollection1.Images.SetKeyName(76, "time_machine.png");
+            this.imageCollection1.Images.SetKeyName(77, "time_machine_shaped.png");
+            this.imageCollection1.Images.SetKeyName(78, "trash_full_alt2(1).png");
+            this.imageCollection1.Images.SetKeyName(79, "trash_full_alt2.png");
+            this.imageCollection1.Images.SetKeyName(80, "user(1).png");
+            this.imageCollection1.Images.SetKeyName(81, "user(2).png");
+            this.imageCollection1.Images.SetKeyName(82, "user.png");
+            this.imageCollection1.Images.SetKeyName(83, "wine_winecfg.png");
             // 
             // hệThốngToolStripMenuItem
             // 
@@ -534,23 +637,28 @@
             // 
             // quanTriHêThôngToolStripMenuItem
             // 
+            this.quanTriHêThôngToolStripMenuItem.ItemLinks.Add(this.mnu_user_management);
             this.quanTriHêThôngToolStripMenuItem.Name = "quanTriHêThôngToolStripMenuItem";
             this.quanTriHêThôngToolStripMenuItem.ShowCaptionButton = false;
             this.quanTriHêThôngToolStripMenuItem.Text = "Quản lý ";
             // 
             // ribbonPageGroup2
             // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.mnu_directory, false, "", "", true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.mnu_type_of_directory);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "Quản lý từ điển";
             // 
             // ribbonPageGroup3
             // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.mnu_exit);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.ShowCaptionButton = false;
             // 
             // ribbonPageGroup9
             // 
+            this.ribbonPageGroup9.ItemLinks.Add(this.barEditItem1);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.ShowCaptionButton = false;
             this.ribbonPageGroup9.Text = "Thay đổi giao diện";
@@ -572,41 +680,49 @@
             // 
             // ribbonPageGroup4
             // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.mnu_category);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.ShowCaptionButton = false;
             // 
             // ribbonPageGroup5
             // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.mnu_product);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.ShowCaptionButton = false;
             // 
             // ribbonPageGroup6
             // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.mnu_dm_unit_product);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.mnu_dm_repository);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.ShowCaptionButton = false;
             // 
             // ribbonPageGroup11
             // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.mnu_dm_provider);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.ShowCaptionButton = false;
             // 
             // mnu_dm_customer_pg
             // 
+            this.mnu_dm_customer_pg.ItemLinks.Add(this.mnu_dm_customer);
             this.mnu_dm_customer_pg.Name = "mnu_dm_customer_pg";
             this.mnu_dm_customer_pg.ShowCaptionButton = false;
             // 
             // ribbonPageGroup12
             // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.mnu_dm_goupcustomer);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.ShowCaptionButton = false;
             // 
             // ribbonPageGroup13
             // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.mnu_dm_employee);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             this.ribbonPageGroup13.ShowCaptionButton = false;
             // 
@@ -627,41 +743,49 @@
             // 
             // ribbonPageGroup7
             // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.m_cmd_product_price);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.ShowCaptionButton = false;
             // 
             // ribbonPageGroup16
             // 
+            this.ribbonPageGroup16.ItemLinks.Add(this.mnu_cmd_sodudau);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             this.ribbonPageGroup16.ShowCaptionButton = false;
             // 
             // ribbonPageGroup17
             // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.mnu_cmd_xuatbanhang);
             this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             this.ribbonPageGroup17.ShowCaptionButton = false;
             // 
             // ribbonPageGroup18
             // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.mnu_cmd_xuathanhly);
             this.ribbonPageGroup18.Name = "ribbonPageGroup18";
             this.ribbonPageGroup18.ShowCaptionButton = false;
             // 
             // ribbonPageGroup19
             // 
+            this.ribbonPageGroup19.ItemLinks.Add(this.mnu_cmd_hangnhacungcap);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
             this.ribbonPageGroup19.ShowCaptionButton = false;
             // 
             // ribbonPageGroup20
             // 
+            this.ribbonPageGroup20.ItemLinks.Add(this.mnu_cmd_hangtralaikhach);
             this.ribbonPageGroup20.Name = "ribbonPageGroup20";
             this.ribbonPageGroup20.ShowCaptionButton = false;
             // 
             // ribbonPageGroup14
             // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.mnu_cmd_lichsuhanghoa);
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
             this.ribbonPageGroup14.ShowCaptionButton = false;
             // 
             // ribbonPageGroup15
             // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.mnu_cmd_kiemkehanghoa);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.ShowCaptionButton = false;
             // 
@@ -680,31 +804,37 @@
             // 
             // ribbonPageGroup8
             // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.mnu_bc_baocao);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.ShowCaptionButton = false;
             // 
             // ribbonPageGroup21
             // 
+            this.ribbonPageGroup21.ItemLinks.Add(this.mnu_bc_xuatnhapton);
             this.ribbonPageGroup21.Name = "ribbonPageGroup21";
             this.ribbonPageGroup21.ShowCaptionButton = false;
             // 
             // ribbonPageGroup23
             // 
+            this.ribbonPageGroup23.ItemLinks.Add(this.mnu_bc_banhang);
             this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             this.ribbonPageGroup23.ShowCaptionButton = false;
             // 
             // ribbonPageGroup22
             // 
+            this.ribbonPageGroup22.ItemLinks.Add(this.m_mnu_bc_theo_hang);
             this.ribbonPageGroup22.Name = "ribbonPageGroup22";
             this.ribbonPageGroup22.ShowCaptionButton = false;
             // 
             // ribbonPageGroup24
             // 
+            this.ribbonPageGroup24.ItemLinks.Add(this.mnu_bao_cao_theo_nhom);
             this.ribbonPageGroup24.Name = "ribbonPageGroup24";
             this.ribbonPageGroup24.ShowCaptionButton = false;
             // 
             // ribbonPageGroup25
             // 
+            this.ribbonPageGroup25.ItemLinks.Add(this.mnu_phieu_nhap_xuat);
             this.ribbonPageGroup25.Name = "ribbonPageGroup25";
             this.ribbonPageGroup25.ShowCaptionButton = false;
             // 
@@ -718,94 +848,26 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.mnu_license);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 673);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 679);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1083, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1083, 25);
             // 
             // s
             // 
             this.s.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.s.Controls.Add(this.m_pnl_content);
+            this.s.ContentImage = global::SaleApp.Properties.Resources._37371_57;
             this.s.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.s.Location = new System.Drawing.Point(0, 151);
+            this.s.Location = new System.Drawing.Point(0, 148);
             this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(1083, 522);
+            this.s.Size = new System.Drawing.Size(1083, 531);
             this.s.TabIndex = 2;
-            // 
-            // m_pnl_content
-            // 
-            this.m_pnl_content.Controls.Add(this.m_xtab_control);
-            this.m_pnl_content.Controls.Add(this.panelControl1);
-            this.m_pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_pnl_content.Location = new System.Drawing.Point(0, 0);
-            this.m_pnl_content.Name = "m_pnl_content";
-            this.m_pnl_content.Size = new System.Drawing.Size(1083, 522);
-            this.m_pnl_content.TabIndex = 0;
-            // 
-            // m_xtab_control
-            // 
-            this.m_xtab_control.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_xtab_control.Location = new System.Drawing.Point(2, 2);
-            this.m_xtab_control.Name = "m_xtab_control";
-            this.m_xtab_control.Size = new System.Drawing.Size(1079, 480);
-            this.m_xtab_control.TabIndex = 0;
-            // 
-            // ImageList
-            // 
-            this.ImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ImageList.ImageStream")));
-            this.ImageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.ImageList.Images.SetKeyName(0, "");
-            this.ImageList.Images.SetKeyName(1, "");
-            this.ImageList.Images.SetKeyName(2, "");
-            this.ImageList.Images.SetKeyName(3, "");
-            this.ImageList.Images.SetKeyName(4, "");
-            this.ImageList.Images.SetKeyName(5, "");
-            this.ImageList.Images.SetKeyName(6, "");
-            this.ImageList.Images.SetKeyName(7, "");
-            this.ImageList.Images.SetKeyName(8, "");
-            this.ImageList.Images.SetKeyName(9, "");
-            this.ImageList.Images.SetKeyName(10, "");
-            this.ImageList.Images.SetKeyName(11, "");
-            this.ImageList.Images.SetKeyName(12, "");
-            this.ImageList.Images.SetKeyName(13, "");
-            this.ImageList.Images.SetKeyName(14, "");
-            this.ImageList.Images.SetKeyName(15, "");
-            this.ImageList.Images.SetKeyName(16, "");
-            this.ImageList.Images.SetKeyName(17, "");
-            this.ImageList.Images.SetKeyName(18, "");
-            this.ImageList.Images.SetKeyName(19, "");
-            this.ImageList.Images.SetKeyName(20, "");
-            this.ImageList.Images.SetKeyName(21, "");
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.m_cmd_exit);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(2, 482);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1079, 38);
-            this.panelControl1.TabIndex = 1;
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(989, 2);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(88, 34);
-            this.m_cmd_exit.TabIndex = 12;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
             // f001_main_form
             // 
@@ -822,7 +884,7 @@
             this.Ribbon = this.ribbon;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "F001 Quản lý bán hàng";
+            this.Text = "f001 Quản lý bán hàng";
             this.Load += new System.EventHandler(this.f001_main_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
@@ -830,12 +892,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s)).EndInit();
-            this.s.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_pnl_content)).EndInit();
-            this.m_pnl_content.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_xtab_control)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -916,10 +972,5 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
         private DevExpress.XtraBars.BarButtonItem mnu_phieu_nhap_xuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
-        private DevExpress.XtraEditors.PanelControl m_pnl_content;
-        private DevExpress.XtraTab.XtraTabControl m_xtab_control;
-        internal System.Windows.Forms.ImageList ImageList;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
     }
 }
