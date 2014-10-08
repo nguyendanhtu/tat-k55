@@ -14,7 +14,7 @@ using System.Collections;
 
 using IP.Core.IPCommon;
 using IP.Core.IPSystemAdmin;
-
+using GuiDev;
 
 namespace SaleApp
 {
@@ -314,7 +314,6 @@ namespace SaleApp
         //
         private void set_define_events()
         {
-
 
         }
 

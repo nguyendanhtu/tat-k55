@@ -280,6 +280,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UC\uc_for_form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\uc_for_form.Designer.cs">
+      <DependentUpon>uc_for_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UC\uc_for_form.resx">
+      <DependentUpon>uc_for_form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="bin\Debug\Help\help.chm" />
     <Content Include="App.ico" />
