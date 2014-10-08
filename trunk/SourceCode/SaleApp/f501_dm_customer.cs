@@ -244,6 +244,9 @@ namespace SaleApp
             this.ShowDialog();
             op_us_customer = m_us_customer;
         }
+        public delegate void close_tab(bool ip_y_n);
+        public close_tab close_tab_B;
+
         #endregion
 
         #region Data Structure
@@ -465,7 +468,8 @@ namespace SaleApp
         {
             try
             {
-                this.Close();
+                close_tab_B(true);
+
             }
             catch (Exception v_e)
             {
