@@ -189,9 +189,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
+            f901_dm_unit v_frm = new f901_dm_unit();
+            v_frm.close_tab_B = new f901_dm_unit.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_unit", "Đơn vị tính", v_uc);
 
-            f901_dm_unit v_frm901 = new f901_dm_unit();
-            v_frm901.display();
+            //f901_dm_unit v_frm901 = new f901_dm_unit();
+            //v_frm901.display();
         }
         private void show_provider()
         {
@@ -200,9 +205,13 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
-
-            f701_dm_provider v_frm701 = new f701_dm_provider();
-            v_frm701.display();
+            f701_dm_provider v_frm = new f701_dm_provider();
+            v_frm.close_tab_B = new f701_dm_provider.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_provider", "Nhà cung cấp", v_uc);
+            //f701_dm_provider v_frm701 = new f701_dm_provider();
+            //v_frm701.display();
         }
         private void show_repository()
         {
@@ -211,9 +220,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
+            f801_dm_repository v_frm = new f801_dm_repository();
+            v_frm.close_tab_B = new f801_dm_repository.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_responsitory", "Kho", v_uc);
 
-            f801_dm_repository v_frm801 = new f801_dm_repository();
-            v_frm801.display();
+            //f801_dm_repository v_frm801 = new f801_dm_repository();
+            //v_frm801.display();
         }
         private void show_form_nhap_so_du_dau()
         {
@@ -234,9 +248,15 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
+            f501_dm_customer v_frm = new f501_dm_customer();
+            v_frm.close_tab_B = new f501_dm_customer.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_customer", "Khách hàng", v_uc);
 
-            f501_dm_customer v_frm501 = new f501_dm_customer();
-            v_frm501.display();
+
+            //f501_dm_customer v_frm501 = new f501_dm_customer();
+            //v_frm501.display();
         }
         private void show_customer_group()
         {
@@ -245,9 +265,14 @@ namespace SaleApp
                 BaseMessages.MsgBox_Infor(" Người sử dụng không được phép truy nhập phần này !!! ");
                 return;
             }
+            f601_dm_customer_group v_frm = new f601_dm_customer_group();
+            v_frm.close_tab_B = new f601_dm_customer_group.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_group_customer", "Nhóm khách hàng", v_uc);
 
-            f601_dm_customer_group v_frm601 = new f601_dm_customer_group();
-            v_frm601.display();
+            //f601_dm_customer_group v_frm601 = new f601_dm_customer_group();
+            //v_frm601.display();
         }
         private void show_company_info()
         {
@@ -257,8 +282,14 @@ namespace SaleApp
                 return;
             }
 
-            f401_dm_company_info v_frm401 = new f401_dm_company_info();
-            v_frm401.display();
+            //f401_dm_company_info v_frm401 = new f401_dm_company_info();
+            //v_frm401.display();
+            f401_dm_company_info v_frm = new f401_dm_company_info();
+            v_frm.close_tab_B = new f401_dm_company_info.close_tab(close_tab_A);
+            uc_for_form v_uc = new uc_for_form();
+            m_obj_tab.AddFormToUC(v_frm, v_uc);
+            m_obj_tab.AddTab(m_xtab_control, "tab_company", "Cửa hàng", v_uc);
+    
         }
         private void show_bao_cao_theo_nhom()
         {

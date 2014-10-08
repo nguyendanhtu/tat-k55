@@ -236,6 +236,9 @@ namespace SaleApp
             m_e_form_mode = DataEntryFormMode.ViewDataState;
 			this.ShowDialog();
 		}
+        public delegate void close_tab(bool ip_y_n);
+        public close_tab close_tab_B;
+
         public void select_provider(ref US_DM_PROVIDER op_us_provider)
         {
             m_e_form_mode = DataEntryFormMode.SelectDataState;
@@ -452,7 +455,8 @@ namespace SaleApp
 
 		private void m_cmd_exit_Click(object sender, EventArgs e) {
 			try{
-				this.Close();
+                close_tab_B(true);
+
 			}
 			catch (Exception v_e){
 				CSystemLog_301.ExceptionHandle(v_e);
