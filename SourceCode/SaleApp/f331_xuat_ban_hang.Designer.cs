@@ -62,10 +62,12 @@
             this.m_txt_total_price = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.m_cmd_remove_row = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.m_pnl_out_place_dm.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_lbl_header
@@ -83,7 +85,7 @@
             // 
             this.m_txt_customer.BackColor = System.Drawing.SystemColors.Info;
             this.m_txt_customer.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.m_txt_customer.Location = new System.Drawing.Point(148, 201);
+            this.m_txt_customer.Location = new System.Drawing.Point(152, 128);
             this.m_txt_customer.Name = "m_txt_customer";
             this.m_txt_customer.Size = new System.Drawing.Size(287, 20);
             this.m_txt_customer.TabIndex = 16;
@@ -93,7 +95,7 @@
             // 
             this.m_lbl_customer.AutoSize = true;
             this.m_lbl_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_customer.Location = new System.Drawing.Point(25, 205);
+            this.m_lbl_customer.Location = new System.Drawing.Point(29, 130);
             this.m_lbl_customer.Name = "m_lbl_customer";
             this.m_lbl_customer.Size = new System.Drawing.Size(114, 16);
             this.m_lbl_customer.TabIndex = 15;
@@ -103,7 +105,7 @@
             // 
             this.m_cmd_add_customer.ImageIndex = 5;
             this.m_cmd_add_customer.ImageList = this.ImageList;
-            this.m_cmd_add_customer.Location = new System.Drawing.Point(450, 199);
+            this.m_cmd_add_customer.Location = new System.Drawing.Point(454, 126);
             this.m_cmd_add_customer.Name = "m_cmd_add_customer";
             this.m_cmd_add_customer.Size = new System.Drawing.Size(32, 22);
             this.m_cmd_add_customer.TabIndex = 17;
@@ -241,18 +243,18 @@
             this.m_fg.AllowAddNew = true;
             this.m_fg.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
-            this.m_fg.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_fg.KeyActionTab = C1.Win.C1FlexGrid.KeyActionEnum.MoveAcrossOut;
-            this.m_fg.Location = new System.Drawing.Point(0, 231);
+            this.m_fg.Location = new System.Drawing.Point(0, 230);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Rows.Count = 3;
-            this.m_fg.Size = new System.Drawing.Size(832, 296);
+            this.m_fg.Rows.Count = 5;
+            this.m_fg.Size = new System.Drawing.Size(832, 297);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 18;
             // 
             // m_txt_bill_code
             // 
-            this.m_txt_bill_code.Location = new System.Drawing.Point(669, 59);
+            this.m_txt_bill_code.Location = new System.Drawing.Point(673, 14);
             this.m_txt_bill_code.Name = "m_txt_bill_code";
             this.m_txt_bill_code.Size = new System.Drawing.Size(138, 20);
             this.m_txt_bill_code.TabIndex = 6;
@@ -261,7 +263,7 @@
             // 
             this.m_lbl_order_number.AutoSize = true;
             this.m_lbl_order_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_order_number.Location = new System.Drawing.Point(580, 63);
+            this.m_lbl_order_number.Location = new System.Drawing.Point(584, 18);
             this.m_lbl_order_number.Name = "m_lbl_order_number";
             this.m_lbl_order_number.Size = new System.Drawing.Size(83, 16);
             this.m_lbl_order_number.TabIndex = 5;
@@ -292,7 +294,7 @@
             // 
             this.m_lbl_date.AutoSize = true;
             this.m_lbl_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_date.Location = new System.Drawing.Point(335, 63);
+            this.m_lbl_date.Location = new System.Drawing.Point(339, 18);
             this.m_lbl_date.Name = "m_lbl_date";
             this.m_lbl_date.Size = new System.Drawing.Size(50, 16);
             this.m_lbl_date.TabIndex = 3;
@@ -302,7 +304,7 @@
             // 
             this.m_dat_bill_date.CustomFormat = "dd/MM/yyyy";
             this.m_dat_bill_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_bill_date.Location = new System.Drawing.Point(391, 59);
+            this.m_dat_bill_date.Location = new System.Drawing.Point(395, 14);
             this.m_dat_bill_date.Name = "m_dat_bill_date";
             this.m_dat_bill_date.Size = new System.Drawing.Size(112, 20);
             this.m_dat_bill_date.TabIndex = 4;
@@ -312,7 +314,7 @@
             // 
             this.m_lbl_company_info_address.AutoSize = true;
             this.m_lbl_company_info_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_company_info_address.Location = new System.Drawing.Point(529, 117);
+            this.m_lbl_company_info_address.Location = new System.Drawing.Point(533, 56);
             this.m_lbl_company_info_address.Name = "m_lbl_company_info_address";
             this.m_lbl_company_info_address.Size = new System.Drawing.Size(278, 16);
             this.m_lbl_company_info_address.TabIndex = 10;
@@ -322,7 +324,7 @@
             // 
             this.m_lbl_phone.AutoSize = true;
             this.m_lbl_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_phone.Location = new System.Drawing.Point(25, 159);
+            this.m_lbl_phone.Location = new System.Drawing.Point(29, 96);
             this.m_lbl_phone.Name = "m_lbl_phone";
             this.m_lbl_phone.Size = new System.Drawing.Size(115, 16);
             this.m_lbl_phone.TabIndex = 11;
@@ -332,7 +334,7 @@
             // 
             this.m_lbl_company_info_name.AutoSize = true;
             this.m_lbl_company_info_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_company_info_name.Location = new System.Drawing.Point(135, 117);
+            this.m_lbl_company_info_name.Location = new System.Drawing.Point(139, 56);
             this.m_lbl_company_info_name.Name = "m_lbl_company_info_name";
             this.m_lbl_company_info_name.Size = new System.Drawing.Size(265, 16);
             this.m_lbl_company_info_name.TabIndex = 8;
@@ -342,7 +344,7 @@
             // 
             this.m_lbl_noi_ban.AutoSize = true;
             this.m_lbl_noi_ban.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_noi_ban.Location = new System.Drawing.Point(25, 117);
+            this.m_lbl_noi_ban.Location = new System.Drawing.Point(29, 56);
             this.m_lbl_noi_ban.Name = "m_lbl_noi_ban";
             this.m_lbl_noi_ban.Size = new System.Drawing.Size(113, 16);
             this.m_lbl_noi_ban.TabIndex = 7;
@@ -352,7 +354,7 @@
             // 
             this.m_lbl_address.AutoSize = true;
             this.m_lbl_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_address.Location = new System.Drawing.Point(443, 117);
+            this.m_lbl_address.Location = new System.Drawing.Point(447, 56);
             this.m_lbl_address.Name = "m_lbl_address";
             this.m_lbl_address.Size = new System.Drawing.Size(81, 16);
             this.m_lbl_address.TabIndex = 9;
@@ -362,7 +364,7 @@
             // 
             this.m_lbl_company_phone.AutoSize = true;
             this.m_lbl_company_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_company_phone.Location = new System.Drawing.Point(145, 159);
+            this.m_lbl_company_phone.Location = new System.Drawing.Point(149, 96);
             this.m_lbl_company_phone.Name = "m_lbl_company_phone";
             this.m_lbl_company_phone.Size = new System.Drawing.Size(84, 16);
             this.m_lbl_company_phone.TabIndex = 12;
@@ -372,7 +374,7 @@
             // 
             this.m_lbl_depository.AutoSize = true;
             this.m_lbl_depository.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_depository.Location = new System.Drawing.Point(25, 63);
+            this.m_lbl_depository.Location = new System.Drawing.Point(29, 18);
             this.m_lbl_depository.Name = "m_lbl_depository";
             this.m_lbl_depository.Size = new System.Drawing.Size(73, 16);
             this.m_lbl_depository.TabIndex = 1;
@@ -383,7 +385,7 @@
             this.m_cbo_repository.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_repository.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.m_cbo_repository.FormattingEnabled = true;
-            this.m_cbo_repository.Location = new System.Drawing.Point(125, 58);
+            this.m_cbo_repository.Location = new System.Drawing.Point(129, 13);
             this.m_cbo_repository.Name = "m_cbo_repository";
             this.m_cbo_repository.Size = new System.Drawing.Size(151, 21);
             this.m_cbo_repository.TabIndex = 2;
@@ -439,11 +441,35 @@
             // 
             this.m_cmd_remove_row.ImageIndex = 4;
             this.m_cmd_remove_row.ImageList = this.ImageList;
-            this.m_cmd_remove_row.Location = new System.Drawing.Point(800, 225);
+            this.m_cmd_remove_row.Location = new System.Drawing.Point(797, 159);
             this.m_cmd_remove_row.Name = "m_cmd_remove_row";
             this.m_cmd_remove_row.Size = new System.Drawing.Size(32, 22);
             this.m_cmd_remove_row.TabIndex = 21;
             this.m_cmd_remove_row.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.m_lbl_address);
+            this.panel3.Controls.Add(this.m_cmd_remove_row);
+            this.panel3.Controls.Add(this.m_lbl_customer);
+            this.panel3.Controls.Add(this.m_txt_customer);
+            this.panel3.Controls.Add(this.m_cmd_add_customer);
+            this.panel3.Controls.Add(this.m_cbo_repository);
+            this.panel3.Controls.Add(this.m_lbl_order_number);
+            this.panel3.Controls.Add(this.m_lbl_depository);
+            this.panel3.Controls.Add(this.m_txt_bill_code);
+            this.panel3.Controls.Add(this.m_lbl_company_phone);
+            this.panel3.Controls.Add(this.m_lbl_date);
+            this.panel3.Controls.Add(this.m_dat_bill_date);
+            this.panel3.Controls.Add(this.m_lbl_noi_ban);
+            this.panel3.Controls.Add(this.m_lbl_company_info_name);
+            this.panel3.Controls.Add(this.m_lbl_company_info_address);
+            this.panel3.Controls.Add(this.m_lbl_phone);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 46);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(832, 184);
+            this.panel3.TabIndex = 22;
             // 
             // f331_xuat_ban_hang
             // 
@@ -451,37 +477,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(832, 616);
-            this.Controls.Add(this.m_cmd_remove_row);
             this.Controls.Add(this.m_fg);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.m_cbo_repository);
-            this.Controls.Add(this.m_lbl_depository);
-            this.Controls.Add(this.m_lbl_company_phone);
-            this.Controls.Add(this.m_lbl_address);
-            this.Controls.Add(this.m_lbl_noi_ban);
-            this.Controls.Add(this.m_lbl_company_info_address);
-            this.Controls.Add(this.m_lbl_phone);
-            this.Controls.Add(this.m_lbl_company_info_name);
-            this.Controls.Add(this.m_dat_bill_date);
-            this.Controls.Add(this.m_lbl_date);
-            this.Controls.Add(this.m_txt_bill_code);
-            this.Controls.Add(this.m_lbl_order_number);
             this.Controls.Add(this.m_pnl_out_place_dm);
-            this.Controls.Add(this.m_cmd_add_customer);
-            this.Controls.Add(this.m_txt_customer);
-            this.Controls.Add(this.m_lbl_customer);
             this.Controls.Add(this.m_lbl_header);
             this.MaximizeBox = false;
             this.Name = "f331_xuat_ban_hang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "F331- Hoa don ban hang";
+            this.Text = "F331- Hóa đơn bán hàng";
             this.m_pnl_out_place_dm.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -519,5 +531,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button m_cmd_remove_row;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

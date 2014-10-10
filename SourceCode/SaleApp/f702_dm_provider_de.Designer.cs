@@ -59,10 +59,10 @@
             this.m_lbl_add__provider.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_add__provider.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_add__provider.Name = "m_lbl_add__provider";
-            this.m_lbl_add__provider.Size = new System.Drawing.Size(614, 25);
+            this.m_lbl_add__provider.Size = new System.Drawing.Size(614, 33);
             this.m_lbl_add__provider.TabIndex = 0;
             this.m_lbl_add__provider.Text = "CẬP NHẬT THÔNG TIN  NHÀ CUNG CẤP";
-            this.m_lbl_add__provider.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.m_lbl_add__provider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // m_lbl_provider_code
             // 

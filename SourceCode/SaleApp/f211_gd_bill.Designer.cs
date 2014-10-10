@@ -44,34 +44,40 @@
             this.m_cmd_save = new SIS.Controls.Button.SiSButton();
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg_gd_bill_detail)).BeginInit();
             this.m_pnl_out_place_dm.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_fg_gd_bill_detail
             // 
             this.m_fg_gd_bill_detail.ColumnInfo = resources.GetString("m_fg_gd_bill_detail.ColumnInfo");
-            this.m_fg_gd_bill_detail.Location = new System.Drawing.Point(12, 125);
+            this.m_fg_gd_bill_detail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_fg_gd_bill_detail.Location = new System.Drawing.Point(0, 107);
             this.m_fg_gd_bill_detail.Name = "m_fg_gd_bill_detail";
-            this.m_fg_gd_bill_detail.Size = new System.Drawing.Size(643, 198);
+            this.m_fg_gd_bill_detail.Size = new System.Drawing.Size(697, 222);
             this.m_fg_gd_bill_detail.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg_gd_bill_detail.Styles"));
             this.m_fg_gd_bill_detail.TabIndex = 21;
             // 
             // m_lbl_gd_bill
             // 
-            this.m_lbl_gd_bill.AutoSize = true;
+            this.m_lbl_gd_bill.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_gd_bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_gd_bill.Location = new System.Drawing.Point(197, 24);
+            this.m_lbl_gd_bill.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_gd_bill.Name = "m_lbl_gd_bill";
-            this.m_lbl_gd_bill.Size = new System.Drawing.Size(263, 29);
+            this.m_lbl_gd_bill.Size = new System.Drawing.Size(697, 42);
             this.m_lbl_gd_bill.TabIndex = 22;
             this.m_lbl_gd_bill.Text = "GIAO DỊCH BÁN HÀNG";
+            this.m_lbl_gd_bill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // m_lbl_bill_seri
             // 
             this.m_lbl_bill_seri.AutoSize = true;
             this.m_lbl_bill_seri.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_bill_seri.Location = new System.Drawing.Point(441, 78);
+            this.m_lbl_bill_seri.Location = new System.Drawing.Point(247, 43);
             this.m_lbl_bill_seri.Name = "m_lbl_bill_seri";
             this.m_lbl_bill_seri.Size = new System.Drawing.Size(73, 13);
             this.m_lbl_bill_seri.TabIndex = 23;
@@ -79,9 +85,9 @@
             // 
             // m_txt_bill_seri
             // 
-            this.m_txt_bill_seri.Location = new System.Drawing.Point(537, 78);
+            this.m_txt_bill_seri.Location = new System.Drawing.Point(350, 40);
             this.m_txt_bill_seri.Name = "m_txt_bill_seri";
-            this.m_txt_bill_seri.Size = new System.Drawing.Size(100, 20);
+            this.m_txt_bill_seri.Size = new System.Drawing.Size(110, 20);
             this.m_txt_bill_seri.TabIndex = 24;
             this.m_txt_bill_seri.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -89,7 +95,7 @@
             // 
             this.m_lbl_bill_date.AutoSize = true;
             this.m_lbl_bill_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_bill_date.Location = new System.Drawing.Point(209, 78);
+            this.m_lbl_bill_date.Location = new System.Drawing.Point(247, 17);
             this.m_lbl_bill_date.Name = "m_lbl_bill_date";
             this.m_lbl_bill_date.Size = new System.Drawing.Size(87, 13);
             this.m_lbl_bill_date.TabIndex = 25;
@@ -99,7 +105,7 @@
             // 
             this.m_date_bill_date.CustomFormat = "dd/MM/yyyy";
             this.m_date_bill_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_date_bill_date.Location = new System.Drawing.Point(312, 75);
+            this.m_date_bill_date.Location = new System.Drawing.Point(350, 14);
             this.m_date_bill_date.Name = "m_date_bill_date";
             this.m_date_bill_date.Size = new System.Drawing.Size(110, 20);
             this.m_date_bill_date.TabIndex = 26;
@@ -108,7 +114,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(358, 347);
+            this.label3.Location = new System.Drawing.Point(406, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 27;
@@ -116,7 +122,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(480, 347);
+            this.textBox2.Location = new System.Drawing.Point(528, 18);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(157, 20);
             this.textBox2.TabIndex = 28;
@@ -127,7 +133,7 @@
             // 
             this.m_lbl_tong_tien.AutoSize = true;
             this.m_lbl_tong_tien.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_tong_tien.Location = new System.Drawing.Point(361, 389);
+            this.m_lbl_tong_tien.Location = new System.Drawing.Point(409, 60);
             this.m_lbl_tong_tien.Name = "m_lbl_tong_tien";
             this.m_lbl_tong_tien.Size = new System.Drawing.Size(61, 13);
             this.m_lbl_tong_tien.TabIndex = 29;
@@ -137,7 +143,7 @@
             // 
             this.m_lbl_amount.AutoSize = true;
             this.m_lbl_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_amount.Location = new System.Drawing.Point(623, 389);
+            this.m_lbl_amount.Location = new System.Drawing.Point(671, 60);
             this.m_lbl_amount.Name = "m_lbl_amount";
             this.m_lbl_amount.Size = new System.Drawing.Size(14, 13);
             this.m_lbl_amount.TabIndex = 30;
@@ -151,7 +157,7 @@
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 429);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(656, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(697, 36);
             this.m_pnl_out_place_dm.TabIndex = 31;
             // 
             // m_cmd_save
@@ -163,7 +169,7 @@
             this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_save.ImageIndex = 10;
             this.m_cmd_save.ImageList = this.ImageList;
-            this.m_cmd_save.Location = new System.Drawing.Point(476, 4);
+            this.m_cmd_save.Location = new System.Drawing.Point(517, 4);
             this.m_cmd_save.Name = "m_cmd_save";
             this.m_cmd_save.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_save.TabIndex = 12;
@@ -206,36 +212,57 @@
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(564, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(605, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 11;
             this.m_cmd_exit.Text = "Thoát (Esc)";
             this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.m_lbl_amount);
+            this.panel1.Controls.Add(this.m_lbl_tong_tien);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 329);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(697, 100);
+            this.panel1.TabIndex = 32;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.m_date_bill_date);
+            this.panel2.Controls.Add(this.m_lbl_bill_seri);
+            this.panel2.Controls.Add(this.m_txt_bill_seri);
+            this.panel2.Controls.Add(this.m_lbl_bill_date);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 42);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(697, 65);
+            this.panel2.TabIndex = 33;
+            // 
             // f211_gd_bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(656, 465);
-            this.Controls.Add(this.m_pnl_out_place_dm);
-            this.Controls.Add(this.m_lbl_amount);
-            this.Controls.Add(this.m_lbl_tong_tien);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.m_date_bill_date);
-            this.Controls.Add(this.m_lbl_bill_date);
-            this.Controls.Add(this.m_txt_bill_seri);
-            this.Controls.Add(this.m_lbl_bill_seri);
-            this.Controls.Add(this.m_lbl_gd_bill);
+            this.ClientSize = new System.Drawing.Size(697, 465);
             this.Controls.Add(this.m_fg_gd_bill_detail);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.m_pnl_out_place_dm);
+            this.Controls.Add(this.m_lbl_gd_bill);
             this.Name = "f211_gd_bill";
             this.Text = "f211 Giao dịch bán hàng";
             ((System.ComponentModel.ISupportInitialize)(this.m_fg_gd_bill_detail)).EndInit();
             this.m_pnl_out_place_dm.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -255,6 +282,8 @@
         internal SIS.Controls.Button.SiSButton m_cmd_save;
         internal System.Windows.Forms.ImageList ImageList;
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
 
     }
 }
