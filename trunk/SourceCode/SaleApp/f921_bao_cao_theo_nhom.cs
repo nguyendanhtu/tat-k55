@@ -36,6 +36,7 @@ namespace SaleApp
         internal Panel m_pnl_out_place_dm;
         internal SIS.Controls.Button.SiSButton m_cmd_export_excel;
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        private Label m_lbl_header;
         private GroupBox m_grb_thong_tin_ban_hang;
         private ComboBox m_cbo_ten_nhom_hang;
         private Label m_lbl_nhom_hang;
@@ -88,6 +89,7 @@ namespace SaleApp
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.m_cmd_export_excel = new SIS.Controls.Button.SiSButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.m_lbl_header = new System.Windows.Forms.Label();
             this.m_grb_thong_tin_ban_hang = new System.Windows.Forms.GroupBox();
             this.m_cbo_ten_nhom_hang = new System.Windows.Forms.ComboBox();
             this.m_lbl_nhom_hang = new System.Windows.Forms.Label();
@@ -132,9 +134,9 @@ namespace SaleApp
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 119);
+            this.m_fg.Location = new System.Drawing.Point(0, 167);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(902, 296);
+            this.m_fg.Size = new System.Drawing.Size(902, 294);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
             // 
@@ -143,7 +145,7 @@ namespace SaleApp
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_export_excel);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 415);
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 461);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
             this.m_pnl_out_place_dm.Size = new System.Drawing.Size(902, 36);
@@ -179,6 +181,18 @@ namespace SaleApp
             this.m_cmd_exit.TabIndex = 11;
             this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
+            // m_lbl_header
+            // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_header.Name = "m_lbl_header";
+            this.m_lbl_header.Size = new System.Drawing.Size(902, 48);
+            this.m_lbl_header.TabIndex = 28;
+            this.m_lbl_header.Text = "BÁO CÁO BÁN HÀNG THEO NHÓM";
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // m_grb_thong_tin_ban_hang
             // 
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.m_cbo_ten_nhom_hang);
@@ -189,10 +203,10 @@ namespace SaleApp
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.label1);
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.m_dat_from_date);
             this.m_grb_thong_tin_ban_hang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_thong_tin_ban_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_grb_thong_tin_ban_hang.Location = new System.Drawing.Point(0, 48);
             this.m_grb_thong_tin_ban_hang.Name = "m_grb_thong_tin_ban_hang";
             this.m_grb_thong_tin_ban_hang.Size = new System.Drawing.Size(902, 119);
-            this.m_grb_thong_tin_ban_hang.TabIndex = 28;
+            this.m_grb_thong_tin_ban_hang.TabIndex = 30;
             this.m_grb_thong_tin_ban_hang.TabStop = false;
             this.m_grb_thong_tin_ban_hang.Text = "Thông tin bán hàng";
             // 
@@ -270,10 +284,11 @@ namespace SaleApp
             // f921_bao_cao_theo_nhom
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(902, 451);
+            this.ClientSize = new System.Drawing.Size(902, 497);
             this.Controls.Add(this.m_fg);
-            this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.m_grb_thong_tin_ban_hang);
+            this.Controls.Add(this.m_lbl_header);
+            this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f921_bao_cao_theo_nhom";
             this.Text = "F921 Báo cáo bán hàng theo nhóm";
             this.Load += new System.EventHandler(this.f921_bao_cao_theo_nhom_Load);

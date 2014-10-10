@@ -93,6 +93,10 @@ namespace SaleApp
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.m_txt_product_name = new System.Windows.Forms.TextBox();
+            this.m_cbo_product_code = new System.Windows.Forms.ComboBox();
+            this.m_lbl_product_code = new System.Windows.Forms.Label();
             this.m_lbl_unit = new System.Windows.Forms.Label();
             this.m_txt_unit = new System.Windows.Forms.TextBox();
             this.m_dat_applied_date = new System.Windows.Forms.DateTimePicker();
@@ -101,10 +105,6 @@ namespace SaleApp
             this.m_lbl_applied_date = new System.Windows.Forms.Label();
             this.m_lbl_product = new System.Windows.Forms.Label();
             this.m_lbl_header = new System.Windows.Forms.Label();
-            this.m_cbo_product_code = new System.Windows.Forms.ComboBox();
-            this.m_lbl_product_code = new System.Windows.Forms.Label();
-            this.m_txt_product_name = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -182,9 +182,9 @@ namespace SaleApp
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 217);
+            this.m_fg.Location = new System.Drawing.Point(0, 226);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(757, 247);
+            this.m_fg.Size = new System.Drawing.Size(757, 238);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 1;
             // 
@@ -202,84 +202,29 @@ namespace SaleApp
             this.groupBox1.Controls.Add(this.m_lbl_applied_date);
             this.groupBox1.Controls.Add(this.m_lbl_product);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 32);
+            this.groupBox1.Location = new System.Drawing.Point(0, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(757, 185);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cập nhật";
             // 
-            // m_lbl_unit
+            // label1
             // 
-            this.m_lbl_unit.AutoSize = true;
-            this.m_lbl_unit.Location = new System.Drawing.Point(399, 105);
-            this.m_lbl_unit.Name = "m_lbl_unit";
-            this.m_lbl_unit.Size = new System.Drawing.Size(38, 13);
-            this.m_lbl_unit.TabIndex = 4;
-            this.m_lbl_unit.Text = "Đơn vị";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(89, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "(*)";
             // 
-            // m_txt_unit
+            // m_txt_product_name
             // 
-            this.m_txt_unit.Enabled = false;
-            this.m_txt_unit.Location = new System.Drawing.Point(473, 102);
-            this.m_txt_unit.Name = "m_txt_unit";
-            this.m_txt_unit.Size = new System.Drawing.Size(191, 20);
-            this.m_txt_unit.TabIndex = 6;
-            this.m_txt_unit.Text = "CAI";
-            // 
-            // m_dat_applied_date
-            // 
-            this.m_dat_applied_date.CustomFormat = "dd/MM/yyyy";
-            this.m_dat_applied_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_applied_date.Location = new System.Drawing.Point(119, 144);
-            this.m_dat_applied_date.Name = "m_dat_applied_date";
-            this.m_dat_applied_date.Size = new System.Drawing.Size(184, 20);
-            this.m_dat_applied_date.TabIndex = 7;
-            // 
-            // m_lbl_price
-            // 
-            this.m_lbl_price.AutoSize = true;
-            this.m_lbl_price.Location = new System.Drawing.Point(35, 105);
-            this.m_lbl_price.Name = "m_lbl_price";
-            this.m_lbl_price.Size = new System.Drawing.Size(44, 13);
-            this.m_lbl_price.TabIndex = 4;
-            this.m_lbl_price.Text = "Giá bán";
-            // 
-            // m_txt_price
-            // 
-            this.m_txt_price.Location = new System.Drawing.Point(119, 102);
-            this.m_txt_price.Name = "m_txt_price";
-            this.m_txt_price.Size = new System.Drawing.Size(223, 20);
-            this.m_txt_price.TabIndex = 5;
-            // 
-            // m_lbl_applied_date
-            // 
-            this.m_lbl_applied_date.AutoSize = true;
-            this.m_lbl_applied_date.Location = new System.Drawing.Point(35, 144);
-            this.m_lbl_applied_date.Name = "m_lbl_applied_date";
-            this.m_lbl_applied_date.Size = new System.Drawing.Size(59, 13);
-            this.m_lbl_applied_date.TabIndex = 6;
-            this.m_lbl_applied_date.Text = "Áp dụng từ";
-            // 
-            // m_lbl_product
-            // 
-            this.m_lbl_product.AutoSize = true;
-            this.m_lbl_product.Location = new System.Drawing.Point(35, 65);
-            this.m_lbl_product.Name = "m_lbl_product";
-            this.m_lbl_product.Size = new System.Drawing.Size(75, 13);
-            this.m_lbl_product.TabIndex = 2;
-            this.m_lbl_product.Text = "Tên sản phẩm";
-            // 
-            // m_lbl_header
-            // 
-            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
-            this.m_lbl_header.Name = "m_lbl_header";
-            this.m_lbl_header.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.m_lbl_header.Size = new System.Drawing.Size(757, 32);
-            this.m_lbl_header.TabIndex = 22;
-            this.m_lbl_header.Text = "CẬP NHẬT GIÁ BÁN SẢN PHẨM";
-            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_txt_product_name.Enabled = false;
+            this.m_txt_product_name.Location = new System.Drawing.Point(119, 63);
+            this.m_txt_product_name.Name = "m_txt_product_name";
+            this.m_txt_product_name.Size = new System.Drawing.Size(545, 20);
+            this.m_txt_product_name.TabIndex = 3;
             // 
             // m_cbo_product_code
             // 
@@ -300,22 +245,78 @@ namespace SaleApp
             this.m_lbl_product_code.TabIndex = 0;
             this.m_lbl_product_code.Text = "Mã sản phẩm";
             // 
-            // m_txt_product_name
+            // m_lbl_unit
             // 
-            this.m_txt_product_name.Enabled = false;
-            this.m_txt_product_name.Location = new System.Drawing.Point(119, 65);
-            this.m_txt_product_name.Name = "m_txt_product_name";
-            this.m_txt_product_name.Size = new System.Drawing.Size(545, 20);
-            this.m_txt_product_name.TabIndex = 3;
+            this.m_lbl_unit.AutoSize = true;
+            this.m_lbl_unit.Location = new System.Drawing.Point(399, 100);
+            this.m_lbl_unit.Name = "m_lbl_unit";
+            this.m_lbl_unit.Size = new System.Drawing.Size(38, 13);
+            this.m_lbl_unit.TabIndex = 4;
+            this.m_lbl_unit.Text = "Đơn vị";
             // 
-            // label1
+            // m_txt_unit
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "(*)";
+            this.m_txt_unit.Enabled = false;
+            this.m_txt_unit.Location = new System.Drawing.Point(473, 97);
+            this.m_txt_unit.Name = "m_txt_unit";
+            this.m_txt_unit.Size = new System.Drawing.Size(191, 20);
+            this.m_txt_unit.TabIndex = 6;
+            this.m_txt_unit.Text = "CAI";
+            // 
+            // m_dat_applied_date
+            // 
+            this.m_dat_applied_date.CustomFormat = "dd/MM/yyyy";
+            this.m_dat_applied_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.m_dat_applied_date.Location = new System.Drawing.Point(119, 137);
+            this.m_dat_applied_date.Name = "m_dat_applied_date";
+            this.m_dat_applied_date.Size = new System.Drawing.Size(184, 20);
+            this.m_dat_applied_date.TabIndex = 7;
+            // 
+            // m_lbl_price
+            // 
+            this.m_lbl_price.AutoSize = true;
+            this.m_lbl_price.Location = new System.Drawing.Point(35, 100);
+            this.m_lbl_price.Name = "m_lbl_price";
+            this.m_lbl_price.Size = new System.Drawing.Size(44, 13);
+            this.m_lbl_price.TabIndex = 4;
+            this.m_lbl_price.Text = "Giá bán";
+            // 
+            // m_txt_price
+            // 
+            this.m_txt_price.Location = new System.Drawing.Point(119, 97);
+            this.m_txt_price.Name = "m_txt_price";
+            this.m_txt_price.Size = new System.Drawing.Size(223, 20);
+            this.m_txt_price.TabIndex = 5;
+            // 
+            // m_lbl_applied_date
+            // 
+            this.m_lbl_applied_date.AutoSize = true;
+            this.m_lbl_applied_date.Location = new System.Drawing.Point(35, 137);
+            this.m_lbl_applied_date.Name = "m_lbl_applied_date";
+            this.m_lbl_applied_date.Size = new System.Drawing.Size(59, 13);
+            this.m_lbl_applied_date.TabIndex = 6;
+            this.m_lbl_applied_date.Text = "Áp dụng từ";
+            // 
+            // m_lbl_product
+            // 
+            this.m_lbl_product.AutoSize = true;
+            this.m_lbl_product.Location = new System.Drawing.Point(35, 63);
+            this.m_lbl_product.Name = "m_lbl_product";
+            this.m_lbl_product.Size = new System.Drawing.Size(75, 13);
+            this.m_lbl_product.TabIndex = 2;
+            this.m_lbl_product.Text = "Tên sản phẩm";
+            // 
+            // m_lbl_header
+            // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_header.Name = "m_lbl_header";
+            this.m_lbl_header.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.m_lbl_header.Size = new System.Drawing.Size(757, 41);
+            this.m_lbl_header.TabIndex = 22;
+            this.m_lbl_header.Text = "CẬP NHẬT GIÁ BÁN SẢN PHẨM";
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // f311_gd_product_price
             // 

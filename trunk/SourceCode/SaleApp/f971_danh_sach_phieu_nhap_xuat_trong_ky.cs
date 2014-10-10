@@ -37,15 +37,16 @@ namespace SaleApp
 		internal SIS.Controls.Button.SiSButton m_cmd_update;
 		internal SIS.Controls.Button.SiSButton m_cmd_insert;
 		internal SIS.Controls.Button.SiSButton m_cmd_exit;
-		internal SIS.Controls.Button.SiSButton m_cmd_select;
+        internal SIS.Controls.Button.SiSButton m_cmd_select;
+        private Label m_lbl_header;
         private GroupBox groupBox1;
+        private ComboBox m_cbo_repository;
+        private Label m_lbl_depository;
         internal SIS.Controls.Button.SiSButton m_cmd_query;
         private DateTimePicker m_dat_to_date;
         private Label label2;
         private DateTimePicker m_dat_from_date;
         private Label label1;
-        private ComboBox m_cbo_repository;
-        private Label m_lbl_depository;
 		private System.ComponentModel.IContainer components;
 
 		public f971_danh_sach_phieu_nhap_xuat_trong_ky()
@@ -93,6 +94,7 @@ namespace SaleApp
             this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.m_lbl_header = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.m_cbo_repository = new System.Windows.Forms.ComboBox();
             this.m_lbl_depository = new System.Windows.Forms.Label();
@@ -144,7 +146,7 @@ namespace SaleApp
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 407);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(847, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(758, 36);
             this.m_pnl_out_place_dm.TabIndex = 19;
             // 
             // m_cmd_insert
@@ -156,7 +158,7 @@ namespace SaleApp
             this.m_cmd_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_insert.ImageIndex = 2;
             this.m_cmd_insert.ImageList = this.ImageList;
-            this.m_cmd_insert.Location = new System.Drawing.Point(491, 4);
+            this.m_cmd_insert.Location = new System.Drawing.Point(402, 4);
             this.m_cmd_insert.Name = "m_cmd_insert";
             this.m_cmd_insert.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_insert.TabIndex = 12;
@@ -171,7 +173,7 @@ namespace SaleApp
             this.m_cmd_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_update.ImageIndex = 3;
             this.m_cmd_update.ImageList = this.ImageList;
-            this.m_cmd_update.Location = new System.Drawing.Point(579, 4);
+            this.m_cmd_update.Location = new System.Drawing.Point(490, 4);
             this.m_cmd_update.Name = "m_cmd_update";
             this.m_cmd_update.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_update.TabIndex = 13;
@@ -202,7 +204,7 @@ namespace SaleApp
             this.m_cmd_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_delete.ImageIndex = 4;
             this.m_cmd_delete.ImageList = this.ImageList;
-            this.m_cmd_delete.Location = new System.Drawing.Point(667, 4);
+            this.m_cmd_delete.Location = new System.Drawing.Point(578, 4);
             this.m_cmd_delete.Name = "m_cmd_delete";
             this.m_cmd_delete.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_delete.TabIndex = 14;
@@ -217,7 +219,7 @@ namespace SaleApp
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(755, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(666, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 11;
@@ -226,12 +228,24 @@ namespace SaleApp
             // m_fg
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
-            this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 74);
+            this.m_fg.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_fg.Location = new System.Drawing.Point(0, 189);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(847, 333);
+            this.m_fg.Size = new System.Drawing.Size(758, 218);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
+            // 
+            // m_lbl_header
+            // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_header.Name = "m_lbl_header";
+            this.m_lbl_header.Size = new System.Drawing.Size(758, 44);
+            this.m_lbl_header.TabIndex = 24;
+            this.m_lbl_header.Text = "DANH MỤC NHÓM HÀNG";
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
@@ -243,10 +257,10 @@ namespace SaleApp
             this.groupBox1.Controls.Add(this.m_dat_from_date);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(0, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(847, 74);
-            this.groupBox1.TabIndex = 22;
+            this.groupBox1.Size = new System.Drawing.Size(758, 74);
+            this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin báo cáo";
             // 
@@ -257,7 +271,7 @@ namespace SaleApp
             this.m_cbo_repository.FormattingEnabled = true;
             this.m_cbo_repository.Location = new System.Drawing.Point(85, 34);
             this.m_cbo_repository.Name = "m_cbo_repository";
-            this.m_cbo_repository.Size = new System.Drawing.Size(235, 21);
+            this.m_cbo_repository.Size = new System.Drawing.Size(143, 21);
             this.m_cbo_repository.TabIndex = 26;
             this.m_cbo_repository.TabStop = false;
             // 
@@ -276,21 +290,20 @@ namespace SaleApp
             this.m_cmd_query.AdjustImageLocation = new System.Drawing.Point(0, 0);
             this.m_cmd_query.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
             this.m_cmd_query.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_query.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_query.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_query.ImageIndex = 5;
             this.m_cmd_query.ImageList = this.ImageList;
-            this.m_cmd_query.Location = new System.Drawing.Point(756, 16);
+            this.m_cmd_query.Location = new System.Drawing.Point(658, 28);
             this.m_cmd_query.Name = "m_cmd_query";
-            this.m_cmd_query.Size = new System.Drawing.Size(88, 55);
+            this.m_cmd_query.Size = new System.Drawing.Size(88, 38);
             this.m_cmd_query.TabIndex = 22;
-            this.m_cmd_query.Text = "Truy vấn";
+            this.m_cmd_query.Text = "Hiển thị";
             // 
             // m_dat_to_date
             // 
             this.m_dat_to_date.CustomFormat = "dd/MM/yyyy";
             this.m_dat_to_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_to_date.Location = new System.Drawing.Point(609, 30);
+            this.m_dat_to_date.Location = new System.Drawing.Point(507, 35);
             this.m_dat_to_date.Name = "m_dat_to_date";
             this.m_dat_to_date.Size = new System.Drawing.Size(129, 20);
             this.m_dat_to_date.TabIndex = 3;
@@ -298,17 +311,17 @@ namespace SaleApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(557, 36);
+            this.label2.Location = new System.Drawing.Point(448, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "đến ngày";
+            this.label2.Text = "Đến ngày";
             // 
             // m_dat_from_date
             // 
             this.m_dat_from_date.CustomFormat = "dd/MM/yyyy";
             this.m_dat_from_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_from_date.Location = new System.Drawing.Point(392, 31);
+            this.m_dat_from_date.Location = new System.Drawing.Point(299, 35);
             this.m_dat_from_date.Name = "m_dat_from_date";
             this.m_dat_from_date.Size = new System.Drawing.Size(134, 20);
             this.m_dat_from_date.TabIndex = 1;
@@ -316,7 +329,7 @@ namespace SaleApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(340, 37);
+            this.label1.Location = new System.Drawing.Point(247, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
@@ -325,9 +338,10 @@ namespace SaleApp
             // f971_danh_sach_phieu_nhap_xuat_trong_ky
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(847, 443);
-            this.Controls.Add(this.m_fg);
+            this.ClientSize = new System.Drawing.Size(758, 443);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.m_lbl_header);
+            this.Controls.Add(this.m_fg);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f971_danh_sach_phieu_nhap_xuat_trong_ky";
             this.Text = "F971 - Danh sách phiếu nhập xuất trong kỳ";

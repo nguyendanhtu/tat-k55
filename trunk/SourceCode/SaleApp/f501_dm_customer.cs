@@ -38,6 +38,7 @@ namespace SaleApp
         internal SIS.Controls.Button.SiSButton m_cmd_insert;
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
         internal SIS.Controls.Button.SiSButton m_cmd_select_customer;
+        private Label m_lbl_header;
         private System.ComponentModel.IContainer components;
 
         public f501_dm_customer()
@@ -85,6 +86,7 @@ namespace SaleApp
             this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.m_lbl_header = new System.Windows.Forms.Label();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.SuspendLayout();
@@ -210,20 +212,33 @@ namespace SaleApp
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_fg.KeyActionEnter = C1.Win.C1FlexGrid.KeyActionEnum.None;
-            this.m_fg.Location = new System.Drawing.Point(0, 0);
+            this.m_fg.Location = new System.Drawing.Point(0, 51);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(686, 373);
+            this.m_fg.Size = new System.Drawing.Size(686, 322);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 0;
+            // 
+            // m_lbl_header
+            // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_header.Name = "m_lbl_header";
+            this.m_lbl_header.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.m_lbl_header.Size = new System.Drawing.Size(686, 51);
+            this.m_lbl_header.TabIndex = 24;
+            this.m_lbl_header.Text = "DANH MỤC KHÁCH HÀNG";
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // f501_dm_customer
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(686, 409);
             this.Controls.Add(this.m_fg);
+            this.Controls.Add(this.m_lbl_header);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f501_dm_customer";
-            this.Text = "F501 - Danh muc khach hang";
+            this.Text = "F501 - Danh mục khách hàng";
             this.Load += new System.EventHandler(this.f501_dm_customer_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();

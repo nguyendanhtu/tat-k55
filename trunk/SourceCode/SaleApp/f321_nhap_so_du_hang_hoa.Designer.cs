@@ -40,14 +40,16 @@
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_dat_ngay_nhap = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.m_pnl_out_place_dm.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_lbl_ngay_nhap
             // 
             this.m_lbl_ngay_nhap.AutoSize = true;
-            this.m_lbl_ngay_nhap.Location = new System.Drawing.Point(27, 68);
+            this.m_lbl_ngay_nhap.Location = new System.Drawing.Point(240, 21);
             this.m_lbl_ngay_nhap.Name = "m_lbl_ngay_nhap";
             this.m_lbl_ngay_nhap.Size = new System.Drawing.Size(59, 13);
             this.m_lbl_ngay_nhap.TabIndex = 2;
@@ -57,16 +59,15 @@
             // 
             this.m_cbo_category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_category.FormattingEnabled = true;
-            this.m_cbo_category.Location = new System.Drawing.Point(376, 64);
+            this.m_cbo_category.Location = new System.Drawing.Point(329, 43);
             this.m_cbo_category.Name = "m_cbo_category";
-            this.m_cbo_category.Size = new System.Drawing.Size(292, 21);
+            this.m_cbo_category.Size = new System.Drawing.Size(180, 21);
             this.m_cbo_category.TabIndex = 3;
-          
             // 
             // m_lbl_product
             // 
             this.m_lbl_product.AutoSize = true;
-            this.m_lbl_product.Location = new System.Drawing.Point(287, 67);
+            this.m_lbl_product.Location = new System.Drawing.Point(240, 46);
             this.m_lbl_product.Name = "m_lbl_product";
             this.m_lbl_product.Size = new System.Drawing.Size(83, 13);
             this.m_lbl_product.TabIndex = 4;
@@ -74,22 +75,23 @@
             // 
             // m_lbl_header
             // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_lbl_header.ForeColor = System.Drawing.Color.Blue;
-            this.m_lbl_header.Location = new System.Drawing.Point(-1, 11);
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_header.Name = "m_lbl_header";
-            this.m_lbl_header.Size = new System.Drawing.Size(690, 32);
+            this.m_lbl_header.Size = new System.Drawing.Size(723, 32);
             this.m_lbl_header.TabIndex = 5;
             this.m_lbl_header.Text = "NHẬP SỐ DƯ ĐẦU KỲ";
-            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // m_fg
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
-            this.m_fg.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_fg.Location = new System.Drawing.Point(0, 108);
+            this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_fg.Location = new System.Drawing.Point(0, 111);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(689, 305);
+            this.m_fg.Size = new System.Drawing.Size(723, 302);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 22;
             // 
@@ -101,7 +103,7 @@
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 413);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(689, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(723, 36);
             this.m_pnl_out_place_dm.TabIndex = 21;
             // 
             // m_cmd_save
@@ -113,7 +115,7 @@
             this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_save.ImageIndex = 10;
             this.m_cmd_save.ImageList = this.ImageList;
-            this.m_cmd_save.Location = new System.Drawing.Point(509, 4);
+            this.m_cmd_save.Location = new System.Drawing.Point(543, 4);
             this.m_cmd_save.Name = "m_cmd_save";
             this.m_cmd_save.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_save.TabIndex = 13;
@@ -155,7 +157,7 @@
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(597, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(631, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 12;
@@ -165,29 +167,39 @@
             // 
             this.m_dat_ngay_nhap.CustomFormat = "dd/MM/yyyy";
             this.m_dat_ngay_nhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_ngay_nhap.Location = new System.Drawing.Point(92, 62);
+            this.m_dat_ngay_nhap.Location = new System.Drawing.Point(329, 15);
             this.m_dat_ngay_nhap.Name = "m_dat_ngay_nhap";
             this.m_dat_ngay_nhap.Size = new System.Drawing.Size(145, 20);
             this.m_dat_ngay_nhap.TabIndex = 23;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.m_cbo_category);
+            this.panel1.Controls.Add(this.m_dat_ngay_nhap);
+            this.panel1.Controls.Add(this.m_lbl_ngay_nhap);
+            this.panel1.Controls.Add(this.m_lbl_product);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 32);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(723, 79);
+            this.panel1.TabIndex = 24;
             // 
             // f321_nhap_so_du_hang_hoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 449);
-            this.Controls.Add(this.m_dat_ngay_nhap);
+            this.ClientSize = new System.Drawing.Size(723, 449);
             this.Controls.Add(this.m_fg);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.m_lbl_header);
-            this.Controls.Add(this.m_lbl_product);
-            this.Controls.Add(this.m_cbo_category);
-            this.Controls.Add(this.m_lbl_ngay_nhap);
             this.Name = "f321_nhap_so_du_hang_hoa";
             this.Text = "F321 - Nhập số dư đầu hàng hóa";
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
             this.m_pnl_out_place_dm.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -203,5 +215,6 @@
         internal System.Windows.Forms.ImageList ImageList;
         internal SIS.Controls.Button.SiSButton m_cmd_save;
         private System.Windows.Forms.DateTimePicker m_dat_ngay_nhap;
+        private System.Windows.Forms.Panel panel1;
     }
 }

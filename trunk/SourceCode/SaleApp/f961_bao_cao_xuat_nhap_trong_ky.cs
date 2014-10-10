@@ -35,6 +35,7 @@ namespace SaleApp
         internal Panel m_pnl_out_place_dm;
         internal SIS.Controls.Button.SiSButton m_cmd_export_excel;
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        private Label m_lbl_header;
         private GroupBox m_grb_thong_tin_ban_hang;
         private ComboBox m_cbo_repository;
         private Label m_lbl_repository;
@@ -89,6 +90,7 @@ namespace SaleApp
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.m_cmd_export_excel = new SIS.Controls.Button.SiSButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.m_lbl_header = new System.Windows.Forms.Label();
             this.m_grb_thong_tin_ban_hang = new System.Windows.Forms.GroupBox();
             this.m_cbo_repository = new System.Windows.Forms.ComboBox();
             this.m_lbl_repository = new System.Windows.Forms.Label();
@@ -135,9 +137,9 @@ namespace SaleApp
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 119);
+            this.m_fg.Location = new System.Drawing.Point(0, 161);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(695, 289);
+            this.m_fg.Size = new System.Drawing.Size(698, 231);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
             // 
@@ -146,10 +148,10 @@ namespace SaleApp
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_export_excel);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 408);
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 392);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(695, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(698, 36);
             this.m_pnl_out_place_dm.TabIndex = 29;
             // 
             // m_cmd_export_excel
@@ -176,11 +178,23 @@ namespace SaleApp
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(603, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(606, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 11;
             this.m_cmd_exit.Text = "Thoát (Esc)";
+            // 
+            // m_lbl_header
+            // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_header.Name = "m_lbl_header";
+            this.m_lbl_header.Size = new System.Drawing.Size(698, 44);
+            this.m_lbl_header.TabIndex = 30;
+            this.m_lbl_header.Text = "BÁO CÁO XUẤT - NHẬP - TỒN";
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // m_grb_thong_tin_ban_hang
             // 
@@ -194,10 +208,10 @@ namespace SaleApp
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.label1);
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.m_dat_from_date);
             this.m_grb_thong_tin_ban_hang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_thong_tin_ban_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_grb_thong_tin_ban_hang.Location = new System.Drawing.Point(0, 44);
             this.m_grb_thong_tin_ban_hang.Name = "m_grb_thong_tin_ban_hang";
-            this.m_grb_thong_tin_ban_hang.Size = new System.Drawing.Size(695, 119);
-            this.m_grb_thong_tin_ban_hang.TabIndex = 28;
+            this.m_grb_thong_tin_ban_hang.Size = new System.Drawing.Size(698, 117);
+            this.m_grb_thong_tin_ban_hang.TabIndex = 31;
             this.m_grb_thong_tin_ban_hang.TabStop = false;
             this.m_grb_thong_tin_ban_hang.Text = "Thông tin bán hàng";
             // 
@@ -206,7 +220,7 @@ namespace SaleApp
             this.m_cbo_repository.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.m_cbo_repository.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.m_cbo_repository.FormattingEnabled = true;
-            this.m_cbo_repository.Location = new System.Drawing.Point(409, 84);
+            this.m_cbo_repository.Location = new System.Drawing.Point(400, 75);
             this.m_cbo_repository.MaxDropDownItems = 5;
             this.m_cbo_repository.Name = "m_cbo_repository";
             this.m_cbo_repository.Size = new System.Drawing.Size(162, 21);
@@ -215,7 +229,7 @@ namespace SaleApp
             // m_lbl_repository
             // 
             this.m_lbl_repository.AutoSize = true;
-            this.m_lbl_repository.Location = new System.Drawing.Point(348, 89);
+            this.m_lbl_repository.Location = new System.Drawing.Point(339, 80);
             this.m_lbl_repository.Name = "m_lbl_repository";
             this.m_lbl_repository.Size = new System.Drawing.Size(26, 13);
             this.m_lbl_repository.TabIndex = 32;
@@ -226,7 +240,7 @@ namespace SaleApp
             this.m_cbo_ten_mat_hang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.m_cbo_ten_mat_hang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.m_cbo_ten_mat_hang.FormattingEnabled = true;
-            this.m_cbo_ten_mat_hang.Location = new System.Drawing.Point(132, 81);
+            this.m_cbo_ten_mat_hang.Location = new System.Drawing.Point(123, 72);
             this.m_cbo_ten_mat_hang.MaxDropDownItems = 5;
             this.m_cbo_ten_mat_hang.Name = "m_cbo_ten_mat_hang";
             this.m_cbo_ten_mat_hang.Size = new System.Drawing.Size(200, 21);
@@ -235,7 +249,7 @@ namespace SaleApp
             // m_lbl_product_name
             // 
             this.m_lbl_product_name.AutoSize = true;
-            this.m_lbl_product_name.Location = new System.Drawing.Point(65, 84);
+            this.m_lbl_product_name.Location = new System.Drawing.Point(56, 75);
             this.m_lbl_product_name.Name = "m_lbl_product_name";
             this.m_lbl_product_name.Size = new System.Drawing.Size(55, 13);
             this.m_lbl_product_name.TabIndex = 30;
@@ -245,7 +259,7 @@ namespace SaleApp
             // 
             this.m_dat_to_date.CustomFormat = "dd/MM/yyyy";
             this.m_dat_to_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_to_date.Location = new System.Drawing.Point(406, 43);
+            this.m_dat_to_date.Location = new System.Drawing.Point(397, 34);
             this.m_dat_to_date.Name = "m_dat_to_date";
             this.m_dat_to_date.Size = new System.Drawing.Size(165, 20);
             this.m_dat_to_date.TabIndex = 26;
@@ -259,16 +273,16 @@ namespace SaleApp
             this.m_cmd_view.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_view.ImageIndex = 5;
             this.m_cmd_view.ImageList = this.ImageList;
-            this.m_cmd_view.Location = new System.Drawing.Point(604, 16);
+            this.m_cmd_view.Location = new System.Drawing.Point(607, 16);
             this.m_cmd_view.Name = "m_cmd_view";
-            this.m_cmd_view.Size = new System.Drawing.Size(88, 100);
+            this.m_cmd_view.Size = new System.Drawing.Size(88, 98);
             this.m_cmd_view.TabIndex = 29;
             this.m_cmd_view.Text = "In báo cáo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(348, 49);
+            this.label2.Location = new System.Drawing.Point(339, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 25;
@@ -277,7 +291,7 @@ namespace SaleApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 48);
+            this.label1.Location = new System.Drawing.Point(56, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 23;
@@ -287,7 +301,7 @@ namespace SaleApp
             // 
             this.m_dat_from_date.CustomFormat = "dd/MM/yyyy";
             this.m_dat_from_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_from_date.Location = new System.Drawing.Point(132, 42);
+            this.m_dat_from_date.Location = new System.Drawing.Point(123, 33);
             this.m_dat_from_date.Name = "m_dat_from_date";
             this.m_dat_from_date.Size = new System.Drawing.Size(200, 20);
             this.m_dat_from_date.TabIndex = 24;
@@ -295,10 +309,11 @@ namespace SaleApp
             // f961_bao_cao_xuat_nhap_trong_ky
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(695, 444);
+            this.ClientSize = new System.Drawing.Size(698, 428);
             this.Controls.Add(this.m_fg);
-            this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.m_grb_thong_tin_ban_hang);
+            this.Controls.Add(this.m_lbl_header);
+            this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f961_bao_cao_xuat_nhap_trong_ky";
             this.Text = "F961 - Báo cáo xuất nhập trong kỳ";
             this.Load += new System.EventHandler(this.f961_bao_cao_xuat_nhap_trong_ky_Load);

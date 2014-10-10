@@ -30,17 +30,18 @@ namespace SaleApp
 	{
         internal System.Windows.Forms.ImageList ImageList;
         private C1.Win.C1FlexGrid.C1FlexGrid m_fg;
+        internal SIS.Controls.Button.SiSButton m_cmd_export_excel;
+        internal Panel m_pnl_out_place_dm;
+        internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        private Label m_lbl_header;
         private GroupBox m_grb_thong_tin_ban_hang;
+        private ComboBox m_cbo_ten_mat_hang;
         private Label label3;
         private DateTimePicker m_dat_to_date;
         internal SIS.Controls.Button.SiSButton m_cmd_view;
         private Label label2;
         private Label label1;
         private DateTimePicker m_dat_from_date;
-        internal SIS.Controls.Button.SiSButton m_cmd_export_excel;
-        internal Panel m_pnl_out_place_dm;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
-        private ComboBox m_cbo_ten_mat_hang;
 		private System.ComponentModel.IContainer components;
 
 		public f931_bao_cao_theo_hang()
@@ -82,6 +83,10 @@ namespace SaleApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f931_bao_cao_theo_hang));
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+            this.m_cmd_export_excel = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.m_lbl_header = new System.Windows.Forms.Label();
             this.m_grb_thong_tin_ban_hang = new System.Windows.Forms.GroupBox();
             this.m_cbo_ten_mat_hang = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,12 +95,9 @@ namespace SaleApp
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.m_dat_from_date = new System.Windows.Forms.DateTimePicker();
-            this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
-            this.m_cmd_export_excel = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
-            this.m_grb_thong_tin_ban_hang.SuspendLayout();
             this.m_pnl_out_place_dm.SuspendLayout();
+            this.m_grb_thong_tin_ban_hang.SuspendLayout();
             this.SuspendLayout();
             // 
             // ImageList
@@ -129,11 +131,64 @@ namespace SaleApp
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 119);
+            this.m_fg.Location = new System.Drawing.Point(0, 163);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(765, 306);
+            this.m_fg.Size = new System.Drawing.Size(765, 262);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
+            // 
+            // m_pnl_out_place_dm
+            // 
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_export_excel);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
+            this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 425);
+            this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
+            this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(765, 36);
+            this.m_pnl_out_place_dm.TabIndex = 27;
+            // 
+            // m_cmd_export_excel
+            // 
+            this.m_cmd_export_excel.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_export_excel.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_export_excel.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_export_excel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_export_excel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_export_excel.ImageIndex = 19;
+            this.m_cmd_export_excel.ImageList = this.ImageList;
+            this.m_cmd_export_excel.Location = new System.Drawing.Point(4, 4);
+            this.m_cmd_export_excel.Name = "m_cmd_export_excel";
+            this.m_cmd_export_excel.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_export_excel.TabIndex = 21;
+            this.m_cmd_export_excel.Text = "Xuất excel";
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 12;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(673, 4);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_exit.TabIndex = 11;
+            this.m_cmd_exit.Text = "Thoát (Esc)";
+            // 
+            // m_lbl_header
+            // 
+            this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_header.Name = "m_lbl_header";
+            this.m_lbl_header.Size = new System.Drawing.Size(765, 44);
+            this.m_lbl_header.TabIndex = 28;
+            this.m_lbl_header.Text = "BÁO CÁO BÁN HÀNG THEO SẢN PHẨM";
+            this.m_lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // m_grb_thong_tin_ban_hang
             // 
@@ -145,10 +200,10 @@ namespace SaleApp
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.label1);
             this.m_grb_thong_tin_ban_hang.Controls.Add(this.m_dat_from_date);
             this.m_grb_thong_tin_ban_hang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_thong_tin_ban_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_grb_thong_tin_ban_hang.Location = new System.Drawing.Point(0, 44);
             this.m_grb_thong_tin_ban_hang.Name = "m_grb_thong_tin_ban_hang";
             this.m_grb_thong_tin_ban_hang.Size = new System.Drawing.Size(765, 119);
-            this.m_grb_thong_tin_ban_hang.TabIndex = 21;
+            this.m_grb_thong_tin_ban_hang.TabIndex = 29;
             this.m_grb_thong_tin_ban_hang.TabStop = false;
             this.m_grb_thong_tin_ban_hang.Text = "Thông tin bán hàng";
             // 
@@ -223,61 +278,21 @@ namespace SaleApp
             this.m_dat_from_date.Size = new System.Drawing.Size(200, 20);
             this.m_dat_from_date.TabIndex = 24;
             // 
-            // m_pnl_out_place_dm
-            // 
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_export_excel);
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
-            this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 425);
-            this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
-            this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(765, 36);
-            this.m_pnl_out_place_dm.TabIndex = 27;
-            // 
-            // m_cmd_export_excel
-            // 
-            this.m_cmd_export_excel.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_export_excel.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_export_excel.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_export_excel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_export_excel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_export_excel.ImageIndex = 19;
-            this.m_cmd_export_excel.ImageList = this.ImageList;
-            this.m_cmd_export_excel.Location = new System.Drawing.Point(4, 4);
-            this.m_cmd_export_excel.Name = "m_cmd_export_excel";
-            this.m_cmd_export_excel.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_export_excel.TabIndex = 21;
-            this.m_cmd_export_excel.Text = "Xuất excel";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(673, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_exit.TabIndex = 11;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
-            // 
             // f931_bao_cao_theo_hang
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(765, 461);
             this.Controls.Add(this.m_fg);
-            this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.m_grb_thong_tin_ban_hang);
+            this.Controls.Add(this.m_lbl_header);
+            this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f931_bao_cao_theo_hang";
             this.Text = "F931 Báo cáo bán hàng theo sản phẩm";
             this.Load += new System.EventHandler(this.f931_bao_cao_theo_hang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
+            this.m_pnl_out_place_dm.ResumeLayout(false);
             this.m_grb_thong_tin_ban_hang.ResumeLayout(false);
             this.m_grb_thong_tin_ban_hang.PerformLayout();
-            this.m_pnl_out_place_dm.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
