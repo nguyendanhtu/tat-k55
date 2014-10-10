@@ -42,6 +42,7 @@ namespace SaleApp
         private Label m_lbl_header;
         internal SIS.Controls.Button.SiSButton m_cmd_tim_kiem;
         private Panel panel1;
+        private Panel panel2;
 		private System.ComponentModel.IContainer components;
 
 		public f201_dm_category()
@@ -93,9 +94,11 @@ namespace SaleApp
             this.m_lbl_header = new System.Windows.Forms.Label();
             this.m_cmd_tim_kiem = new SIS.Controls.Button.SiSButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ImageList
@@ -228,7 +231,7 @@ namespace SaleApp
             // m_txt_search
             // 
             this.m_txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_search.Location = new System.Drawing.Point(223, 14);
+            this.m_txt_search.Location = new System.Drawing.Point(12, 5);
             this.m_txt_search.Name = "m_txt_search";
             this.m_txt_search.Size = new System.Drawing.Size(141, 24);
             this.m_txt_search.TabIndex = 21;
@@ -237,7 +240,7 @@ namespace SaleApp
             // 
             this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_header.Name = "m_lbl_header";
             this.m_lbl_header.Size = new System.Drawing.Size(705, 44);
@@ -253,7 +256,7 @@ namespace SaleApp
             this.m_cmd_tim_kiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_tim_kiem.ImageIndex = 5;
             this.m_cmd_tim_kiem.ImageList = this.ImageList;
-            this.m_cmd_tim_kiem.Location = new System.Drawing.Point(384, 12);
+            this.m_cmd_tim_kiem.Location = new System.Drawing.Point(173, 4);
             this.m_cmd_tim_kiem.Name = "m_cmd_tim_kiem";
             this.m_cmd_tim_kiem.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_tim_kiem.TabIndex = 24;
@@ -261,13 +264,21 @@ namespace SaleApp
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_txt_search);
-            this.panel1.Controls.Add(this.m_cmd_tim_kiem);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(705, 54);
             this.panel1.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.m_txt_search);
+            this.panel2.Controls.Add(this.m_cmd_tim_kiem);
+            this.panel2.Location = new System.Drawing.Point(426, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(275, 37);
+            this.panel2.TabIndex = 25;
             // 
             // f201_dm_category
             // 
@@ -283,7 +294,8 @@ namespace SaleApp
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -319,6 +331,7 @@ namespace SaleApp
 		private void format_controls(){
 			CControlFormat.setFormStyle(this);
 			CControlFormat.setC1FlexFormat(m_fg);
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			set_define_events();
 			this.KeyPreview = true;		
 		}

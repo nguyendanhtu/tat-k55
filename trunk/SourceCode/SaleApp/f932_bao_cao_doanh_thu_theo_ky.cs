@@ -217,7 +217,7 @@ namespace SaleApp
             // 
             this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_header.Name = "m_lbl_header";
             this.m_lbl_header.Size = new System.Drawing.Size(581, 44);
@@ -358,6 +358,7 @@ namespace SaleApp
         private void format_controls()
         {
             CControlFormat.setFormStyle(this);
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             CControlFormat.setC1FlexFormat(m_fg);
             CGridUtils.AddSave_Excel_Handlers(m_fg);
             CGridUtils.AddSearch_Handlers(m_fg);

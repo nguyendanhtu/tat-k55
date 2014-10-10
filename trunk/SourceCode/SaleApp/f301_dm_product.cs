@@ -69,7 +69,6 @@ namespace SaleApp
 			}
 			base.Dispose( disposing );
 		}
-
 		#region Windows Form Designer generated code
 		/// <summary>
 		/// Required method for Designer support - do not modify
@@ -229,7 +228,7 @@ namespace SaleApp
             // 
             this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_header.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lbl_header.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_header.Name = "m_lbl_header";
             this.m_lbl_header.Size = new System.Drawing.Size(814, 44);
@@ -320,6 +319,7 @@ namespace SaleApp
 		#region Private Methods
 		private void format_controls(){
 			CControlFormat.setFormStyle(this);
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			CControlFormat.setC1FlexFormat(m_fg);
 			set_define_events();
 			this.KeyPreview = true;		
