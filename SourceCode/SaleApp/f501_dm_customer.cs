@@ -222,6 +222,7 @@ namespace SaleApp
             // 
             this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_header.Name = "m_lbl_header";
             this.m_lbl_header.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
@@ -289,6 +290,7 @@ namespace SaleApp
         {
             CControlFormat.setFormStyle(this);
             CControlFormat.setC1FlexFormat(m_fg);
+            this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             mapping_col_customer_group();
             m_fg.Tree.Column = (int)e_col_Number.CUSTOMER_NAME;
             m_fg.Tree.Style = TreeStyleFlags.SimpleLeaf;

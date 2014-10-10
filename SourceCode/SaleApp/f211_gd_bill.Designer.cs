@@ -66,6 +66,7 @@
             // 
             this.m_lbl_gd_bill.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_gd_bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_gd_bill.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_gd_bill.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_gd_bill.Name = "m_lbl_gd_bill";
             this.m_lbl_gd_bill.Size = new System.Drawing.Size(697, 42);

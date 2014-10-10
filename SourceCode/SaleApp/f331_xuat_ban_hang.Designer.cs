@@ -72,8 +72,10 @@
             // 
             // m_lbl_header
             // 
+            this.m_lbl_header.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.m_lbl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_header.ForeColor = System.Drawing.Color.Blue;
             this.m_lbl_header.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_header.Name = "m_lbl_header";
             this.m_lbl_header.Size = new System.Drawing.Size(832, 46);
@@ -247,7 +249,7 @@
             this.m_fg.KeyActionTab = C1.Win.C1FlexGrid.KeyActionEnum.MoveAcrossOut;
             this.m_fg.Location = new System.Drawing.Point(0, 230);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Rows.Count = 5;
+            this.m_fg.Rows.Count = 6;
             this.m_fg.Size = new System.Drawing.Size(832, 297);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 18;
@@ -449,6 +451,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Controls.Add(this.m_lbl_address);
             this.panel3.Controls.Add(this.m_cmd_remove_row);
             this.panel3.Controls.Add(this.m_lbl_customer);

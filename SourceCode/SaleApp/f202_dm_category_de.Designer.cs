@@ -55,6 +55,7 @@
             // mlbl_add_category
             // 
             this.mlbl_add_category.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbl_add_category.ForeColor = System.Drawing.Color.Blue;
             this.mlbl_add_category.Location = new System.Drawing.Point(0, 9);
             this.mlbl_add_category.Name = "mlbl_add_category";
             this.mlbl_add_category.Size = new System.Drawing.Size(612, 25);
